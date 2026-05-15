@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main className="page">
@@ -28,52 +30,74 @@ export default function Home() {
         </div>
       </a>
 
-      {/* NAV (TOP RIGHT) */}
+      {/* NAV (TOP CENTER) */}
       <nav className="nav">
         <div className="pillNav">
-          <a href="#projects">Work</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
+          <a href="#contact">Connect</a>
+          <Link href="/about">About</Link>
+          <a href="/resume">Resume</a>
         </div>
       </nav>
 
       {/* HERO */}
       <section className="hero" id="about">
-        <p className="tag">UX/UI DESIGNER</p>
+        <div className="heroLeft">
+          <p className="tag">UX/UI DESIGNER</p>
 
-        <h1>
-          Welcome to
-          <br />
-          bella's corner
-          <br />
-          of the internet.
-        </h1>
+          <h1>
+            Welcome to
+            <br />
+            <em className="accent">bella's</em> corner
+            <br />
+            of the internet.
+          </h1>
 
-        <p className="description">
-          Great design solves real problems. I'm here to do that creatively,
-          collaboratively, & with intent.
-        </p>
+          <p className="description">
+            Great design solves real problems. I'm here to do that creatively,
+            collaboratively, & with intent.
+          </p>
+        </div>
+
+        <div className="heroRight">
+          <img src="/meteoraprofilepic.JPG" alt="Isabella Howell" className="heroImage" />
+        </div>
       </section>
 
       {/* PROJECTS */}
       <section className="projects" id="projects">
-        <div className="card">
-          <div className="image pink"></div>
-          <h2>Creator Platform</h2>
-          <p>Product design / Branding</p>
+        <div className="cardWrapper">
+          <Link href="/projects/creator-platform" className="card">
+            <div className="cardImage pink"></div>
+            <div className="cardBody">
+              <h2>Creator Platform</h2>
+              <p className="cardDesc">Unified form filling experience introducing a Form pattern that improved 30+ customer-facing products and drove 2x adoption within 90 days.</p>
+              <span className="cardDate">Sept 2024 – Till Date</span>
+            </div>
+          </Link>
         </div>
 
-        <div className="card">
-          <div className="image blue"></div>
-          <h2>Fashion App</h2>
-          <p>Mobile UX / Interface</p>
+        <div className="cardWrapper">
+          <Link href="/projects/fashion-app" className="card">
+            <div className="cardImage blue"></div>
+            <div className="cardBody">
+              <h2>Fashion App</h2>
+              <p className="cardDesc">End-to-end mobile UX for styling and outfit planning, increasing engagement by 40% through personalized recommendation flows.</p>
+              <span className="cardDate">Jan 2024 – Aug 2024</span>
+            </div>
+          </Link>
         </div>
 
-        <div className="card">
-          <div className="image purple"></div>
-          <h2>Portfolio System</h2>
-          <p>Creative Development</p>
+        <div className="cardWrapper">
+          <Link href="/projects/portfolio-system" className="card">
+            <div className="cardImage purple"></div>
+            <div className="cardBody">
+              <h2>Portfolio System</h2>
+              <p className="cardDesc">A modular portfolio builder concept designed to let creatives showcase work with minimal setup and maximum visual impact.</p>
+              <span className="cardDate">Sep 2023 – Dec 2023</span>
+            </div>
+          </Link>
         </div>
+
       </section>
 
       {/* STYLES */}
@@ -91,7 +115,8 @@ export default function Home() {
         .nav {
           position: fixed;
           top: 24px;
-          right: 24px;
+          left: 50%;
+          transform: translateX(-50%);
           z-index: 10;
         }
 
@@ -254,7 +279,26 @@ export default function Home() {
 
         .hero {
           margin-top: 120px;
-          max-width: 900px;
+          display: flex;
+          align-items: flex-start;
+          gap: 60px;
+        }
+
+        .heroLeft {
+          flex: 1;
+          min-width: 0;
+        }
+
+        .heroRight {
+          width: 340px;
+          flex-shrink: 0;
+        }
+
+        .heroImage {
+          width: 100%;
+          height: 480px;
+          object-fit: cover;
+          border-radius: 20px;
         }
 
         .tag {
@@ -265,15 +309,21 @@ export default function Home() {
         }
 
         h1 {
-          font-size: clamp(60px, 10vw, 120px);
-          line-height: 0.95;
-          font-weight: 600;
-          letter-spacing: -4px;
+          font-family: var(--font-serif);
+          font-size: clamp(52px, 8vw, 100px);
+          line-height: 1;
+          font-weight: 700;
+          letter-spacing: -2px;
+        }
+
+        .accent {
+          font-style: italic;
+          color: #c0522a;
         }
 
         .description {
           margin-top: 32px;
-          max-width: 520px;
+          max-width: 480px;
           font-size: 18px;
           line-height: 1.7;
           color: #555;
@@ -284,29 +334,34 @@ export default function Home() {
         .projects {
           margin-top: 120px;
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-          gap: 28px;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 24px;
+        }
+
+        .cardWrapper {
+          border-radius: 20px;
+          box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+          transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+            box-shadow 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .cardWrapper:hover {
+          transform: scale(1.015);
+          box-shadow: 0 20px 48px rgba(0, 0, 0, 0.12);
         }
 
         .card {
-          cursor: pointer;
-          transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+          display: block;
+          text-decoration: none;
+          color: inherit;
+          background: white;
+          border-radius: 20px;
+          overflow: hidden;
         }
 
-        .card:hover {
-          transform: translateY(-14px);
-        }
-
-        .image {
-          height: 360px;
-          border-radius: 28px;
-          margin-bottom: 18px;
-          transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
-        }
-
-        .card:hover .image {
-          transform: scale(1.03);
-          box-shadow: 0 24px 50px rgba(0, 0, 0, 0.15);
+        .cardImage {
+          width: 100%;
+          height: 340px;
         }
 
         .pink {
@@ -321,13 +376,31 @@ export default function Home() {
           background: linear-gradient(135deg, #e6dcff, #f3e8ff);
         }
 
-        h2 {
-          font-size: 24px;
-          margin-bottom: 6px;
+        .cardBody {
+          padding: 28px 32px 32px;
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
         }
 
-        .card p {
-          color: #666;
+        h2 {
+          font-size: 22px;
+          font-weight: 600;
+          margin: 0;
+        }
+
+        .cardDesc {
+          font-size: 15px;
+          line-height: 1.65;
+          color: #444;
+          margin: 0;
+        }
+
+        .cardDate {
+          display: block;
+          margin-top: 8px;
+          font-size: 14px;
+          color: #999;
         }
       `}</style>
     </main>
