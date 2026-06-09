@@ -479,10 +479,9 @@ export default function CreatorPlatform() {
         }
         h1 {
           font-family: var(--font-serif);
-          font-size: clamp(32px, 5vw, 52px);
+          font-size: 52px;
           font-weight: 500; color: #111;
           line-height: 1.1; margin-bottom: 40px;
-          max-width: 640px;
         }
         .heroImg {
           width: 100%; display: block;
@@ -543,7 +542,7 @@ export default function CreatorPlatform() {
         .coreFlows { display: flex; flex-direction: column; gap: 48px; margin: 24px 0 32px; }
         .coreFlowRow { display: flex; align-items: center; gap: 48px; }
         .coreVideo {
-          width: 340px; flex-shrink: 0; display: block;
+          width: 220px; flex-shrink: 0; display: block;
           border-radius: 16px;
           mix-blend-mode: multiply;
         }
@@ -617,7 +616,7 @@ export default function CreatorPlatform() {
         .designContent { display: flex; gap: 40px; align-items: flex-start; }
         .designContent.reverse { flex-direction: row-reverse; }
         .twoPhones { display: flex; gap: 12px; flex-shrink: 0; }
-        .designPhone { width: 160px; border-radius: 16px; display: block; }
+        .designPhone { width: 220px; border-radius: 16px; display: block; }
         .designText { flex: 1; }
         .designText h3 { font-size: 21px; font-weight: 400; color: #111; margin-bottom: 12px; line-height: 1.3; }
         .designText p  { font-size: 15px; line-height: 1.8; color: #32404f; margin-bottom: 10px; }
