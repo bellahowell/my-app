@@ -477,8 +477,8 @@ export default function CreatorPlatform() {
         .heroInner { max-width: 900px; margin: 0 auto; }
         .heroLabel {
           font-size: 13px; letter-spacing: 2px;
-          color: #32404f; opacity: 0.6; margin-bottom: 20px;
-          text-transform: uppercase;
+          color: rgba(50,64,79,0.58); margin-bottom: 20px;
+          text-transform: uppercase; font-family: var(--font-mono);
         }
         h1 {
           font-family: var(--font-serif);
@@ -501,7 +501,7 @@ export default function CreatorPlatform() {
         /* ===== META ===== */
         .meta { display: flex; gap: 48px; flex-wrap: wrap; padding: 8px 0 40px; }
         .metaItem { display: flex; flex-direction: column; gap: 4px; }
-        .metaLabel { font-size: 11px; letter-spacing: 1.5px; color: #32404f; opacity: 0.5; text-transform: uppercase; }
+        .metaLabel { font-size: 11px; letter-spacing: 1.5px; color: rgba(50,64,79,0.58); font-family: var(--font-mono); text-transform: uppercase; }
         .metaValue { font-size: 14px; color: #32404f; }
 
         /* ===== DIVIDER ===== */
@@ -510,7 +510,8 @@ export default function CreatorPlatform() {
         /* ===== TEXT SECTIONS ===== */
         .sectionLabel {
           display: block; font-size: 11px; letter-spacing: 2px;
-          color: #32404f; opacity: 0.6;
+          color: rgba(50,64,79,0.58);
+          font-family: var(--font-mono);
           text-transform: uppercase; margin-bottom: 12px;
         }
         .textSection { margin-bottom: 32px; }
@@ -565,7 +566,7 @@ export default function CreatorPlatform() {
         .insightsLeft p { font-size: 15px; line-height: 1.8; color: #32404f; }
         .insightsRight { flex: 1; display: flex; flex-direction: column; gap: 24px; }
         .insightItem {}
-        .insightNum { display: block; font-size: 11px; letter-spacing: 1.5px; color: #32404f; opacity: 0.6; text-transform: uppercase; margin-bottom: 4px; }
+        .insightNum { display: block; font-size: 11px; letter-spacing: 1.5px; color: rgba(50,64,79,0.58); font-family: var(--font-mono); text-transform: uppercase; margin-bottom: 4px; }
         .insightItem h3 { font-size: 15px; font-weight: 600; color: #111; margin-bottom: 4px; }
         .insightItem p  { font-size: 14px; line-height: 1.7; color: #32404f; }
 
@@ -612,7 +613,8 @@ export default function CreatorPlatform() {
         .designRow { margin-bottom: 56px; }
         .designTag {
           display: inline-block; font-size: 11px; letter-spacing: 1.5px;
-          text-transform: uppercase; color: #32404f; opacity: 0.5; margin-bottom: 16px;
+          text-transform: uppercase; color: rgba(50,64,79,0.58);
+          font-family: var(--font-mono); margin-bottom: 16px;
         }
         .designContent { display: flex; gap: 40px; align-items: flex-start; }
         .designContent.reverse { flex-direction: row-reverse; }
@@ -624,11 +626,11 @@ export default function CreatorPlatform() {
 
         /* ===== BEFORE / AFTER ===== */
         .beforeAfter { margin: 32px 0 48px; }
-        .beforeAfter h3 { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #32404f; opacity: 0.5; margin-bottom: 20px; }
+        .beforeAfter h3 { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(50,64,79,0.58); font-family: var(--font-mono); margin-bottom: 20px; }
         .baThreeCols { display: flex; gap: 24px; align-items: flex-start; }
         .baThreeCol { flex: 0 0 220px; }
         .baThreeColText { flex: 1; }
-        .baLabel { display: block; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #32404f; opacity: 0.5; margin-bottom: 10px; }
+        .baLabel { display: block; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(50,64,79,0.58); font-family: var(--font-mono); margin-bottom: 10px; }
         .baThreeColText p { font-size: 13px; line-height: 1.7; color: #707070; margin-bottom: 8px; }
         .baMediaSm { width: 100%; display: block; border-radius: 12px; mix-blend-mode: multiply; }
 
