@@ -123,28 +123,28 @@ export default function CreatorPlatform() {
         <hr className="divider" />
 
         {/* PROCESS & KEY INSIGHTS */}
-        <section className="textSection">
-          <span className="sectionLabel">PROCESS & KEY INSIGHTS</span>
-          <h2>Conducting user interviews.</h2>
-          <p>We conducted contextual inquiries and interviews with TikTok affiliate creators to map fragmented trust-building behaviors and uncover gaps in brand transparency. We referenced the problem statements I created to make sure that my design really addresses the user's needs.</p>
-        </section>
-
-        {/* KEY INSIGHTS */}
-        <div className="insights">
-          <div className="insight">
-            <span className="insightNum">KEY INSIGHT 1</span>
-            <h3>Trust is Earned, Not Assessed</h3>
-            <p>Creators had no way to evaluate brand reliability upfront — trust only emerged through repeated interactions and consistent payments over time.</p>
+        <div className="insightsLayout">
+          <div className="insightsLeft">
+            <span className="sectionLabel">PROCESS & KEY INSIGHTS</span>
+            <h2>Conducting user interviews.</h2>
+            <p>We conducted contextual inquiries and interviews with TikTok affiliate creators to map fragmented trust-building behaviors and uncover gaps in brand transparency. We <strong>referenced the problem statements I created to make sure that my design really addresses the user's needs.</strong></p>
           </div>
-          <div className="insight">
-            <span className="insightNum">KEY INSIGHT 2</span>
-            <h3>Product Over Partner</h3>
-            <p>Creators prioritized product performance over how brands treat affiliates, revealing a blind spot around partner accountability.</p>
-          </div>
-          <div className="insight">
-            <span className="insightNum">KEY INSIGHT 3</span>
-            <h3>Experience Shifts Strategy</h3>
-            <p>Seasoned creators approached deals with more skepticism and strategy, while newer creators took on risk without the context to recognize it.</p>
+          <div className="insightsRight">
+            <div className="insightItem">
+              <span className="insightNum">KEY INSIGHT 1:</span>
+              <h3>Trust is Earned, Not Assessed</h3>
+              <p>creators had no way to evaluate brand reliability upfront, trust only emerged through repeated interactions and consistent payments over time.</p>
+            </div>
+            <div className="insightItem">
+              <span className="insightNum">KEY INSIGHT 2:</span>
+              <h3>Product Over Partner</h3>
+              <p>creators prioritized product performance over how brands treat affiliates, revealing a blind spot around partner accountability.</p>
+            </div>
+            <div className="insightItem">
+              <span className="insightNum">KEY INSIGHT 3:</span>
+              <h3>Experience Shifts Strategy</h3>
+              <p>seasoned creators approached deals with more skepticism and strategy, while newer creators took on risk without the context to recognize it.</p>
+            </div>
           </div>
         </div>
 
@@ -186,13 +186,19 @@ export default function CreatorPlatform() {
         </section>
 
         <div className="userFlows">
-          <div className="userFlowItem">
-            <div className="flowImgPlaceholder" />
-            <p><strong>USER FLOW 1:</strong> Starts in the inbox, where creators naturally receive partnership requests, and introduces an affiliate rating filter that turns complex credibility signals into simple categories like "Trusted" or "Good."</p>
+          <div className="userFlowRow">
+            <img src="/1stuserflow.png" alt="User flow 1" className="flowImg" />
+            <div className="flowText">
+              <span className="sectionLabel">USER FLOW 1:</span>
+              <p>Starts in the inbox, where creators naturally receive partnership requests, and introduces an affiliate rating filter that turns complex credibility signals into simple categories like "Trusted" or "Good" — helping creators quickly identify reliable collaborations without feeling overwhelmed.</p>
+            </div>
           </div>
-          <div className="userFlowItem">
-            <div className="flowImgPlaceholder" />
-            <p><strong>USER FLOW 2:</strong> Begins on the home screen during product browsing and leads users to an "About this shop" section where a new affiliate feedback layer gives creators peer-sourced insight into brand reliability.</p>
+          <div className="userFlowRow">
+            <div className="flowText">
+              <span className="sectionLabel">USER FLOW 2:</span>
+              <p>Begins on the home screen during product browsing and leads users to an "About this shop" section where a new affiliate feedback layer gives creators peer-sourced insight into brand reliability, filling a gap that general customer reviews don't address.</p>
+            </div>
+            <img src="/2nduserflow.png" alt="User flow 2" className="flowImg" />
           </div>
         </div>
 
@@ -533,15 +539,21 @@ export default function CreatorPlatform() {
         .coreFlowText p { font-size: 18px; font-weight: 500; color: #111; line-height: 1.4; margin-bottom: 8px; }
         .coreFlowText .caption { font-size: 15px; font-weight: 400; color: #32404f; opacity: 0.8; }
 
-        /* ===== KEY INSIGHTS ===== */
-        .insights { display: flex; gap: 20px; margin: 24px 0 32px; flex-wrap: wrap; }
-        .insight {
-          flex: 1; min-width: 200px;
-          border: 1px solid #e8e8e8; border-radius: 12px; padding: 20px;
+        /* ===== INSIGHTS LAYOUT (2-col) ===== */
+        .insightsLayout { display: flex; gap: 48px; margin: 32px 0; align-items: flex-start; }
+        .insightsLeft { flex: 1; }
+        .insightsLeft h2 {
+          font-family: var(--font-serif);
+          font-size: clamp(22px, 3vw, 32px);
+          font-weight: 600; line-height: 1.2;
+          margin-bottom: 16px; color: #32404f;
         }
-        .insightNum { display: block; font-size: 11px; letter-spacing: 1.5px; color: #32404f; opacity: 0.5; text-transform: uppercase; margin-bottom: 8px; }
-        .insight h3 { font-size: 15px; font-weight: 600; color: #111; margin-bottom: 8px; }
-        .insight p  { font-size: 13px; line-height: 1.7; color: #32404f; }
+        .insightsLeft p { font-size: 15px; line-height: 1.8; color: #32404f; }
+        .insightsRight { flex: 1; display: flex; flex-direction: column; gap: 24px; }
+        .insightItem {}
+        .insightNum { display: block; font-size: 11px; letter-spacing: 1.5px; color: #32404f; opacity: 0.6; text-transform: uppercase; margin-bottom: 4px; }
+        .insightItem h3 { font-size: 15px; font-weight: 600; color: #111; margin-bottom: 4px; }
+        .insightItem p  { font-size: 14px; line-height: 1.7; color: #32404f; }
 
         /* ===== QUOTES ===== */
         .quotesSection { margin: 32px 0; }
@@ -570,9 +582,11 @@ export default function CreatorPlatform() {
         .interviewQuestions p { font-size: 14px; line-height: 1.8; color: #32404f; margin-bottom: 12px; }
 
         /* ===== USER FLOWS ===== */
-        .userFlows { display: flex; gap: 32px; margin: 24px 0 32px; }
-        .userFlowItem { flex: 1; }
-        .userFlowItem p { font-size: 14px; line-height: 1.7; color: #32404f; }
+        .userFlows { display: flex; flex-direction: column; gap: 48px; margin: 24px 0 32px; }
+        .userFlowRow { display: flex; gap: 40px; align-items: flex-start; }
+        .flowImg { flex: 1; width: 0; min-width: 0; border-radius: 8px; display: block; }
+        .flowText { flex: 0 0 220px; }
+        .flowText p { font-size: 14px; line-height: 1.7; color: #32404f; margin-top: 8px; }
 
         /* ===== PROTO ROWS (first round) ===== */
         .protoRow { display: flex; gap: 40px; align-items: flex-start; margin-bottom: 48px; }
