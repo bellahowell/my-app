@@ -405,6 +405,7 @@ export default function CreatorPlatform() {
           font-family: var(--font-sans, Arial, sans-serif);
           color: #32404f;
         }
+        .page p { color: rgba(50,64,79,0.58); }
 
         /* ===== PROFILE BUTTON ===== */
         .profileButton {
