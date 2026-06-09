@@ -113,11 +113,11 @@ export default function CreatorPlatform() {
             <p>Added "See what affiliates say" in the product listing</p>
           </div>
           <div className="coreFlow">
-            <div className="mockupPhone"><video src="/filtering system.mov" autoPlay loop muted playsInline className="mockupVideo" /></div>
+            <div className="mockupPhone"><video src="/filtermessages.mov" autoPlay loop muted playsInline className="mockupVideo" /></div>
             <p>Filtering collage messages</p>
           </div>
           <div className="coreFlow">
-            <div className="mockupPhone"><video src="/collab message.mov" autoPlay loop muted playsInline className="mockupVideo" /></div>
+            <div className="mockupPhone"><video src="/productmessagepage.mov" autoPlay loop muted playsInline className="mockupVideo" /></div>
             <p>Filtering collab messages</p>
           </div>
         </div>
@@ -650,8 +650,7 @@ export default function CreatorPlatform() {
         }
         .mockupVideo {
           width: 100%; height: 100%;
-          object-fit: cover;
-          transform: scale(1.35);
+          object-fit: contain;
           display: block;
         }
         .designTag {
