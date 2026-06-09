@@ -41,11 +41,7 @@ export default function CreatorPlatform() {
         <div className="heroInner">
           <p className="heroLabel">TIKTOK ⟡ CONCEPT 2026</p>
           <h1>Assisting TikTok Affiliates Discover Brands with Confidence</h1>
-          <div className="heroPhones">
-            <div className="heroPhone" />
-            <div className="heroPhone" />
-            <div className="heroPhone" />
-          </div>
+          <img src="/tiktokmainpic.png" alt="TikTok affiliate app mockups" className="heroImg" />
         </div>
       </section>
 
@@ -448,31 +444,26 @@ export default function CreatorPlatform() {
 
         /* ===== HERO ===== */
         .hero {
-          background: #3e2b17;
-          padding: 160px 40px 0;
+          background: #fff;
+          padding: 140px 40px 0;
           margin-bottom: 64px;
         }
         .heroInner { max-width: 900px; margin: 0 auto; }
         .heroLabel {
           font-size: 13px; letter-spacing: 2px;
-          color: #a08070; margin-bottom: 20px;
+          color: #32404f; opacity: 0.6; margin-bottom: 20px;
           text-transform: uppercase;
         }
         h1 {
           font-family: var(--font-serif);
           font-size: clamp(32px, 5vw, 52px);
-          font-weight: 500; color: #fff;
-          line-height: 1.1; margin-bottom: 48px;
+          font-weight: 500; color: #111;
+          line-height: 1.1; margin-bottom: 40px;
           max-width: 640px;
         }
-        .heroPhones {
-          display: flex; gap: 16px; align-items: flex-end;
-        }
-        .heroPhone {
-          flex: 1; height: 400px;
-          background: rgba(255,255,255,0.08);
-          border-radius: 24px 24px 0 0;
-          border: 1px dashed rgba(255,255,255,0.15);
+        .heroImg {
+          width: 100%; display: block;
+          border-radius: 16px;
         }
 
         /* ===== CONTAINER ===== */
