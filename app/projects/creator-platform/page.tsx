@@ -240,7 +240,7 @@ export default function CreatorPlatform() {
         <span className="sectionLabel">CORE FLOWS</span>
 
         <div className="mockupRow">
-          <video className="mockupPhone" src="/see what affiliates say.mov" autoPlay loop muted playsInline />
+          <div className="mockupPhone"><video src="/see what affiliates say.mov" autoPlay loop muted playsInline className="mockupVideo" /></div>
           <div className="mockupText">
             <span className="designTag">DESIGN 1</span>
             <h3>Added "See what affiliates say" in the product listing</h3>
@@ -255,7 +255,7 @@ export default function CreatorPlatform() {
         </div>
 
         <div className="mockupRow reverse">
-          <video className="mockupPhone" src="/filtering system.mov" autoPlay loop muted playsInline />
+          <div className="mockupPhone"><video src="/filtering system.mov" autoPlay loop muted playsInline className="mockupVideo" /></div>
           <div className="mockupText">
             <span className="designTag">DESIGN 2</span>
             <h3>Filtering collage messages</h3>
@@ -270,7 +270,7 @@ export default function CreatorPlatform() {
         </div>
 
         <div className="mockupRow">
-          <video className="mockupPhone" src="/collab message.mov" autoPlay loop muted playsInline />
+          <div className="mockupPhone"><video src="/collab message.mov" autoPlay loop muted playsInline className="mockupVideo" /></div>
           <div className="mockupText">
             <span className="designTag">DESIGN 3</span>
             <h3>Filtering collab messages</h3>
@@ -605,9 +605,13 @@ export default function CreatorPlatform() {
         .mockupPhone {
           width: 220px; height: 420px; flex-shrink: 0;
           border-radius: 28px; overflow: hidden;
-          object-fit: cover; display: block;
-          object-position: center;
+          background: #000;
+        }
+        .mockupVideo {
+          width: 100%; height: 100%;
+          object-fit: cover;
           transform: scale(1.35);
+          display: block;
         }
         .designTag {
           display: inline-block;
