@@ -99,6 +99,74 @@ export default function CreatorPlatform() {
 
         <hr className="divider" />
 
+        {/* SOLUTION */}
+        <section className="textSection">
+          <span className="sectionLabel">SOLUTION</span>
+          <h2>A trust-centered review system built directly into TikTok Shop & messages.</h2>
+        </section>
+
+        <span className="sectionLabel">CORE FLOWS</span>
+
+        <div className="mockupRow">
+          <div className="mockupPhone"><video src="/see what affiliates say.mov" autoPlay loop muted playsInline className="mockupVideo" /></div>
+          <div className="mockupText">
+            <span className="designTag">DESIGN 1</span>
+            <h3>Added "See what affiliates say" in the product listing</h3>
+            <p>Affiliate feedback lives next to the commission rate, exactly where creators look first when evaluating a product.</p>
+            <p className="designDetail">
+              The commission rate is the very first thing an affiliate checks when evaluating a
+              product. Moving the "See What Affiliates Say" button to sit beside the commission rate
+              was a direct result of user feedback, and it reframed how we thought about placement
+              for the rest of the design.
+            </p>
+          </div>
+        </div>
+
+        <div className="mockupRow reverse">
+          <div className="mockupPhone"><video src="/filtering system.mov" autoPlay loop muted playsInline className="mockupVideo" /></div>
+          <div className="mockupText">
+            <span className="designTag">DESIGN 2</span>
+            <h3>Filtering collage messages</h3>
+            <p>An organized way to know your relationship with the brand & the ability to filter by affiliate rating.</p>
+            <p className="designDetail">
+              When we showed our interviewee the existing filter tools, they told us they rarely use
+              them. The confusion around affiliate ratings versus shop ratings led us to add info
+              tooltips explaining what each one means, so affiliates could filter with confidence
+              rather than guessing.
+            </p>
+          </div>
+        </div>
+
+        <div className="mockupRow">
+          <div className="mockupPhone"><video src="/collab message.mov" autoPlay loop muted playsInline className="mockupVideo" /></div>
+          <div className="mockupText">
+            <span className="designTag">DESIGN 3</span>
+            <h3>Filtering collab messages</h3>
+            <p>Embedded reviews inside the brand message page, putting the information exactly where the decision is already happening.</p>
+            <p className="designDetail">
+              Our interviewee said they still couldn't tell which brands they had already worked
+              with versus new ones. The tab structure organizing messages into Active, Previously
+              Partnered, and New Connections was our direct response to that frustration.
+            </p>
+          </div>
+        </div>
+
+        <div className="mockupRow reverse">
+          <div className="mockupPhone" />
+          <div className="mockupText">
+            <span className="designTag">DESIGN 4</span>
+            <h3>Affiliate Reviews in Brand Message Page</h3>
+            <p>
+              Our first round of testing revealed that affiliates had no way to evaluate a brand's
+              reliability before agreeing to work with them. Having feedback from other affiliates
+              upfront saves time and helps avoid situations where brands lower commissions or don't
+              pay at all.
+            </p>
+          </div>
+        </div>
+
+        <hr className="divider" />
+
         {/* RESEARCH */}
         <section className="textSection">
           <span className="sectionLabel">PROCESS & KEY INSIGHTS</span>
@@ -229,72 +297,11 @@ export default function CreatorPlatform() {
           </p>
         </section>
 
-        <hr className="divider" />
-
-        {/* SOLUTION */}
-        <section className="textSection">
-          <span className="sectionLabel">SOLUTION</span>
-          <h2>A trust-centered review system built directly into TikTok Shop & messages.</h2>
-        </section>
-
-        <span className="sectionLabel">CORE FLOWS</span>
-
-        <div className="mockupRow">
-          <div className="mockupPhone"><video src="/see what affiliates say.mov" autoPlay loop muted playsInline className="mockupVideo" /></div>
-          <div className="mockupText">
-            <span className="designTag">DESIGN 1</span>
-            <h3>Added "See what affiliates say" in the product listing</h3>
-            <p>Affiliate feedback lives next to the commission rate, exactly where creators look first when evaluating a product.</p>
-            <p className="designDetail">
-              The commission rate is the very first thing an affiliate checks when evaluating a
-              product. Moving the "See What Affiliates Say" button to sit beside the commission rate
-              was a direct result of user feedback, and it reframed how we thought about placement
-              for the rest of the design.
-            </p>
-          </div>
-        </div>
-
-        <div className="mockupRow reverse">
-          <div className="mockupPhone"><video src="/filtering system.mov" autoPlay loop muted playsInline className="mockupVideo" /></div>
-          <div className="mockupText">
-            <span className="designTag">DESIGN 2</span>
-            <h3>Filtering collage messages</h3>
-            <p>An organized way to know your relationship with the brand & the ability to filter by affiliate rating.</p>
-            <p className="designDetail">
-              When we showed our interviewee the existing filter tools, they told us they rarely use
-              them. The confusion around affiliate ratings versus shop ratings led us to add info
-              tooltips explaining what each one means, so affiliates could filter with confidence
-              rather than guessing.
-            </p>
-          </div>
-        </div>
-
-        <div className="mockupRow">
-          <div className="mockupPhone"><video src="/collab message.mov" autoPlay loop muted playsInline className="mockupVideo" /></div>
-          <div className="mockupText">
-            <span className="designTag">DESIGN 3</span>
-            <h3>Filtering collab messages</h3>
-            <p>Embedded reviews inside the brand message page, putting the information exactly where the decision is already happening.</p>
-            <p className="designDetail">
-              Our interviewee said they still couldn't tell which brands they had already worked
-              with versus new ones. The tab structure organizing messages into Active, Previously
-              Partnered, and New Connections was our direct response to that frustration.
-            </p>
-          </div>
-        </div>
-
-        <div className="mockupRow reverse">
-          <div className="mockupPhone" />
-          <div className="mockupText">
-            <span className="designTag">DESIGN 4</span>
-            <h3>Affiliate Reviews in Brand Message Page</h3>
-            <p>
-              Our first round of testing revealed that affiliates had no way to evaluate a brand's
-              reliability before agreeing to work with them. Having feedback from other affiliates
-              upfront saves time and helps avoid situations where brands lower commissions or don't
-              pay at all.
-            </p>
-          </div>
+        <div className="protoGrid">
+          <div className="protoPlaceholder" />
+          <div className="protoPlaceholder" />
+          <div className="protoPlaceholder" />
+          <div className="protoPlaceholder" />
         </div>
 
         <hr className="divider" />
@@ -581,6 +588,17 @@ export default function CreatorPlatform() {
           text-transform: uppercase; margin-bottom: 8px;
         }
         .flow p { font-size: 14px; line-height: 1.7; color: #32404f; }
+
+        /* ===== PROTO GRID (second round 4-up) ===== */
+        .protoGrid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 16px;
+          margin: 24px 0 32px;
+        }
+        .protoGrid .protoPlaceholder {
+          width: 100%; height: 320px;
+        }
 
         /* ===== PROTOTYPE BLOCKS ===== */
         .protoBlock {
