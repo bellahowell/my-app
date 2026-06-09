@@ -362,7 +362,7 @@ export default function CreatorPlatform() {
         </section>
 
         <div className="landingRow">
-          <div className="phonePlaceholder" />
+          <video src="/design123.mov" autoPlay loop muted playsInline className="landingVideo" />
           <div className="landingText">
             <span className="designTag">DESIGN 1 + DESIGN 2 + DESIGN 3</span>
             <p>We combined affiliate reviews, trust filtering, and inbox organization into a single flow, giving creators multiple ways to evaluate and manage brand opportunities in one place.</p>
@@ -374,7 +374,7 @@ export default function CreatorPlatform() {
             <span className="designTag">DESIGN 4</span>
             <p>We also retained the product listing flow, relocating "See what affiliates say" next to the commission rate based on user feedback, which reframed how we approached placement across the rest of the design.</p>
           </div>
-          <div className="phonePlaceholder" />
+          <video src="/design4final.mov" autoPlay loop muted playsInline className="landingVideo" />
         </div>
 
         <hr className="divider" />
@@ -649,7 +649,8 @@ export default function CreatorPlatform() {
         /* ===== REFLECTION ===== */
         .reflections { display: flex; gap: 32px; margin: 24px 0; flex-wrap: wrap; }
         .reflection { flex: 1; min-width: 240px; }
-        .reflection h3 { font-size: 21px; font-weight: 600; color: #111; margin-bottom: 10px; }
+        .reflection h3 { font-family: var(--font-garamond); font-size: 24px; font-weight: 500; color: #111; margin-bottom: 10px; }
+        .landingVideo { width: 260px; border-radius: 16px; mix-blend-mode: multiply; flex-shrink: 0; }
         .reflection p  { font-size: 15px; line-height: 1.8; color: #32404f; }
       `}</style>
     </main>
