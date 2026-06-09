@@ -40,7 +40,7 @@ export default function CreatorPlatform() {
       <section className="hero">
         <div className="heroInner">
           <p className="heroLabel">TIKTOK ⟡ CONCEPT 2026</p>
-          <h1>Assisting TikTok Affiliates Discover Brands with Confidence</h1>
+          <h1>Assisting TikTok Affiliates<br />Discover Brands with Confidence</h1>
           <img src="/titktoklandingpageimage.png" alt="TikTok affiliate app mockups" className="heroImg" />
         </div>
       </section>
@@ -486,7 +486,7 @@ export default function CreatorPlatform() {
         }
         .heroImg {
           width: 100%; display: block;
-          border-radius: 16px;
+          border-radius: 0;
         }
 
         /* ===== CONTAINER ===== */
