@@ -572,12 +572,11 @@ export default function CreatorPlatform() {
         /* ===== QUOTES ===== */
         .quotesSection { margin: 32px 0; }
         .quotesHeading { font-size: 21px; font-weight: 400; color: #111; margin-bottom: 16px; }
-        .quotes { display: flex; flex-wrap: wrap; gap: 12px; }
+        .quotes { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
         .quote {
           background: #e4f0ff; color: #0366ff;
           border-radius: 10px; padding: 16px 18px;
           font-size: 13px; line-height: 1.6;
-          flex: 1; min-width: 180px;
         }
 
         /* ===== INTERVIEW TOGGLE ===== */
@@ -627,7 +626,7 @@ export default function CreatorPlatform() {
         .beforeAfter { margin: 32px 0 48px; }
         .beforeAfter h3 { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #32404f; opacity: 0.5; margin-bottom: 20px; }
         .baThreeCols { display: flex; gap: 24px; align-items: flex-start; }
-        .baThreeCol { flex: 0 0 160px; }
+        .baThreeCol { flex: 0 0 220px; }
         .baThreeColText { flex: 1; }
         .baLabel { display: block; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #32404f; opacity: 0.5; margin-bottom: 10px; }
         .baThreeColText p { font-size: 13px; line-height: 1.7; color: #707070; margin-bottom: 8px; }
