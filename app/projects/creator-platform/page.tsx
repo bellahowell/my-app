@@ -603,9 +603,9 @@ export default function CreatorPlatform() {
         }
         .mockupRow.reverse { flex-direction: row-reverse; }
         .mockupPhone {
-          width: 220px; flex-shrink: 0;
+          width: 220px; height: 420px; flex-shrink: 0;
           border-radius: 28px; overflow: hidden;
-          object-fit: cover;
+          object-fit: cover; display: block;
         }
         .designTag {
           display: inline-block;
