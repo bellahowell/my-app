@@ -240,8 +240,8 @@ export default function CreatorPlatform() {
           <span className="designTag">DESIGN 1</span>
           <div className="designContent">
             <div className="twoPhones">
-              <div className="phonePlaceholder" />
-              <div className="phonePlaceholder" />
+              <img src="/design 1.1.png" alt="Design 1.1" className="designPhone" />
+              <img src="/design 1.2.png" alt="Design 1.2" className="designPhone" />
             </div>
             <div className="designText">
               <h3>Affiliate Reviews in Brand Message Page</h3>
@@ -261,8 +261,8 @@ export default function CreatorPlatform() {
               <p>The confusion they described around affiliate ratings versus shop ratings led us to add info tooltips explaining what each one means, so affiliates could filter with confidence rather than guessing.</p>
             </div>
             <div className="twoPhones">
-              <div className="phonePlaceholder" />
-              <div className="phonePlaceholder" />
+              <img src="/design 2.1.png" alt="Design 2.1" className="designPhone" />
+              <img src="/design 2.2.png" alt="Design 2.2" className="designPhone" />
             </div>
           </div>
         </div>
@@ -272,8 +272,8 @@ export default function CreatorPlatform() {
           <span className="designTag">DESIGN 3</span>
           <div className="designContent">
             <div className="twoPhones">
-              <div className="phonePlaceholder" />
-              <div className="phonePlaceholder" />
+              <img src="/design 3.1.png" alt="Design 3.1" className="designPhone" />
+              <img src="/design 3.2.png" alt="Design 3.2" className="designPhone" />
             </div>
             <div className="designText">
               <h3>Collab Messages Inbox</h3>
@@ -293,8 +293,8 @@ export default function CreatorPlatform() {
               <p>Moving the "See What Affiliates Say" button to sit beside the commission rate was a direct result of that one piece of feedback, and it reframed how we thought about placement for the rest of the design.</p>
             </div>
             <div className="twoPhones">
-              <div className="phonePlaceholder" />
-              <div className="phonePlaceholder" />
+              <img src="/design 4.1.png" alt="Design 4.1" className="designPhone" />
+              <img src="/design 4.2.png" alt="Design 4.2" className="designPhone" />
             </div>
           </div>
         </div>
@@ -604,6 +604,7 @@ export default function CreatorPlatform() {
         .designContent { display: flex; gap: 40px; align-items: flex-start; }
         .designContent.reverse { flex-direction: row-reverse; }
         .twoPhones { display: flex; gap: 12px; flex-shrink: 0; }
+        .designPhone { width: 160px; border-radius: 16px; display: block; }
         .designText { flex: 1; }
         .designText h3 { font-size: 21px; font-weight: 400; color: #111; margin-bottom: 12px; line-height: 1.3; }
         .designText p  { font-size: 15px; line-height: 1.8; color: #32404f; margin-bottom: 10px; }
