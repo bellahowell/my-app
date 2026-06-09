@@ -107,61 +107,18 @@ export default function CreatorPlatform() {
 
         <span className="sectionLabel">CORE FLOWS</span>
 
-        <div className="mockupRow">
-          <div className="mockupPhone"><video src="/see what affiliates say.mov" autoPlay loop muted playsInline className="mockupVideo" /></div>
-          <div className="mockupText">
-            <span className="designTag">DESIGN 1</span>
-            <h3>Added "See what affiliates say" in the product listing</h3>
-            <p>Affiliate feedback lives next to the commission rate, exactly where creators look first when evaluating a product.</p>
-            <p className="designDetail">
-              The commission rate is the very first thing an affiliate checks when evaluating a
-              product. Moving the "See What Affiliates Say" button to sit beside the commission rate
-              was a direct result of user feedback, and it reframed how we thought about placement
-              for the rest of the design.
-            </p>
+        <div className="coreFlows">
+          <div className="coreFlow">
+            <div className="mockupPhone"><video src="/see what affiliates say.mov" autoPlay loop muted playsInline className="mockupVideo" /></div>
+            <p>Added "See what affiliates say" in the product listing</p>
           </div>
-        </div>
-
-        <div className="mockupRow reverse">
-          <div className="mockupPhone"><video src="/filtering system.mov" autoPlay loop muted playsInline className="mockupVideo" /></div>
-          <div className="mockupText">
-            <span className="designTag">DESIGN 2</span>
-            <h3>Filtering collage messages</h3>
-            <p>An organized way to know your relationship with the brand & the ability to filter by affiliate rating.</p>
-            <p className="designDetail">
-              When we showed our interviewee the existing filter tools, they told us they rarely use
-              them. The confusion around affiliate ratings versus shop ratings led us to add info
-              tooltips explaining what each one means, so affiliates could filter with confidence
-              rather than guessing.
-            </p>
+          <div className="coreFlow">
+            <div className="mockupPhone"><video src="/filtering system.mov" autoPlay loop muted playsInline className="mockupVideo" /></div>
+            <p>Filtering collage messages</p>
           </div>
-        </div>
-
-        <div className="mockupRow">
-          <div className="mockupPhone"><video src="/collab message.mov" autoPlay loop muted playsInline className="mockupVideo" /></div>
-          <div className="mockupText">
-            <span className="designTag">DESIGN 3</span>
-            <h3>Filtering collab messages</h3>
-            <p>Embedded reviews inside the brand message page, putting the information exactly where the decision is already happening.</p>
-            <p className="designDetail">
-              Our interviewee said they still couldn't tell which brands they had already worked
-              with versus new ones. The tab structure organizing messages into Active, Previously
-              Partnered, and New Connections was our direct response to that frustration.
-            </p>
-          </div>
-        </div>
-
-        <div className="mockupRow reverse">
-          <div className="mockupPhone" />
-          <div className="mockupText">
-            <span className="designTag">DESIGN 4</span>
-            <h3>Affiliate Reviews in Brand Message Page</h3>
-            <p>
-              Our first round of testing revealed that affiliates had no way to evaluate a brand's
-              reliability before agreeing to work with them. Having feedback from other affiliates
-              upfront saves time and helps avoid situations where brands lower commissions or don't
-              pay at all.
-            </p>
+          <div className="coreFlow">
+            <div className="mockupPhone"><video src="/collab message.mov" autoPlay loop muted playsInline className="mockupVideo" /></div>
+            <p>Filtering collab messages</p>
           </div>
         </div>
 
@@ -228,26 +185,6 @@ export default function CreatorPlatform() {
 
         <hr className="divider" />
 
-        {/* USER FLOWS */}
-        <section className="textSection">
-          <span className="sectionLabel">DESIGN PROCESS</span>
-          <h2>User flows.</h2>
-          <p>We mapped two flows around the most natural moments for affiliates to encounter and act on trust signals.</p>
-        </section>
-
-        <div className="flows">
-          <div className="flow">
-            <span className="flowLabel">USER FLOW 1</span>
-            <p>Starts in the inbox, where creators naturally receive partnership requests, and introduces an affiliate rating filter that turns complex credibility signals into simple categories like "Trusted" or "Good" — helping creators quickly identify reliable collaborations without feeling overwhelmed.</p>
-          </div>
-          <div className="flow">
-            <span className="flowLabel">USER FLOW 2</span>
-            <p>Begins on the home screen during product browsing and leads users to an "About this shop" section where a new affiliate feedback layer gives creators peer-sourced insight into brand reliability, filling a gap that general customer reviews don't address.</p>
-          </div>
-        </div>
-
-        <hr className="divider" />
-
         {/* FIRST ROUND */}
         <section className="textSection">
           <h2>First round of prototypes.</h2>
@@ -297,11 +234,91 @@ export default function CreatorPlatform() {
           </p>
         </section>
 
-        <div className="protoGrid">
-          <div className="protoPlaceholder" />
-          <div className="protoPlaceholder" />
-          <div className="protoPlaceholder" />
-          <div className="protoPlaceholder" />
+        <div className="mockupRow">
+          <div className="twoPhonesCol">
+            <div className="protoPlaceholder" />
+            <div className="protoPlaceholder" />
+          </div>
+          <div className="mockupText">
+            <span className="designTag">DESIGN 1</span>
+            <h3>Affiliate Reviews in Brand Message Page</h3>
+            <p>
+              Our first round of testing revealed that affiliates had no way to evaluate a brand's
+              reliability before agreeing to work with them. Brands will sometimes lower commissions
+              after the fact or not pay at all. Having feedback from other affiliates upfront saves
+              time and helps avoid those situations.
+            </p>
+            <p>
+              That feedback was the reason we embedded reviews inside the brand message page,
+              putting the information exactly where the decision is already happening.
+            </p>
+          </div>
+        </div>
+
+        <div className="mockupRow reverse">
+          <div className="twoPhonesCol">
+            <div className="protoPlaceholder" />
+            <div className="protoPlaceholder" />
+          </div>
+          <div className="mockupText">
+            <span className="designTag">DESIGN 2</span>
+            <h3>Filtering System in New Connections Inbox</h3>
+            <p>
+              When we showed our interviewee the existing filter tools, they told us they rarely use
+              them. That raised a question: if affiliates aren't using filters that already exist,
+              what would actually make them useful?
+            </p>
+            <p>
+              The confusion they described around affiliate ratings versus shop ratings led us to
+              add info tooltips explaining what each one means, so affiliates could filter with
+              confidence rather than guessing.
+            </p>
+          </div>
+        </div>
+
+        <div className="mockupRow">
+          <div className="twoPhonesCol">
+            <div className="protoPlaceholder" />
+            <div className="protoPlaceholder" />
+          </div>
+          <div className="mockupText">
+            <span className="designTag">DESIGN 3</span>
+            <h3>Collab Messages Inbox</h3>
+            <p>
+              This design came almost entirely from one quote. Our interviewee said that even after
+              using the platform for so long, they still couldn't tell which brands they had already
+              worked with versus which ones were new: <em>"Even with the updates, even though I've
+              been on this platform for like two and a half years, I still don't even know what that
+              is? It's just so confusing. I wish it actually said, you know, new connections or
+              existing brands"</em>.
+            </p>
+            <p>
+              The tab structure organizing messages into Active, Previously Partnered, and New
+              Connections was our direct response to that frustration.
+            </p>
+          </div>
+        </div>
+
+        <div className="mockupRow reverse">
+          <div className="twoPhonesCol">
+            <div className="protoPlaceholder" />
+            <div className="protoPlaceholder" />
+          </div>
+          <div className="mockupText">
+            <span className="designTag">DESIGN 4</span>
+            <h3>Product Listing with "See What Affiliates Say" Button</h3>
+            <p>
+              The commission rate is the very first thing an affiliate checks when evaluating a
+              product. If we were going to surface affiliate feedback anywhere on that page, it
+              should live right next to the commission number because that is where their eyes go
+              first.
+            </p>
+            <p>
+              Moving the "See What Affiliates Say" button to sit beside the commission rate was a
+              direct result of that one piece of feedback, and it reframed how we thought about
+              placement for the rest of the design.
+            </p>
+          </div>
         </div>
 
         <hr className="divider" />
@@ -589,15 +606,21 @@ export default function CreatorPlatform() {
         }
         .flow p { font-size: 14px; line-height: 1.7; color: #32404f; }
 
-        /* ===== PROTO GRID (second round 4-up) ===== */
-        .protoGrid {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          gap: 16px;
-          margin: 24px 0 32px;
+        /* ===== CORE FLOWS (3 videos side by side) ===== */
+        .coreFlows {
+          display: flex; gap: 24px; margin: 24px 0 32px;
+          align-items: flex-start;
         }
-        .protoGrid .protoPlaceholder {
-          width: 100%; height: 320px;
+        .coreFlow { flex: 1; display: flex; flex-direction: column; gap: 12px; }
+        .coreFlow p { font-size: 13px; color: #32404f; line-height: 1.5; }
+        .coreFlow .mockupPhone { width: 100%; height: 340px; }
+
+        /* ===== TWO PHONES SIDE BY SIDE ===== */
+        .twoPhonesCol {
+          display: flex; gap: 12px; flex-shrink: 0;
+        }
+        .twoPhonesCol .protoPlaceholder {
+          width: 140px; height: 280px; flex-shrink: 0;
         }
 
         /* ===== PROTOTYPE BLOCKS ===== */
