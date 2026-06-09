@@ -515,7 +515,7 @@ export default function CreatorPlatform() {
           font-family: var(--font-serif);
           font-size: clamp(22px, 3vw, 32px);
           font-weight: 600; line-height: 1.2;
-          margin-bottom: 16px; color: rgba(50,64,79,0.58);
+          margin-bottom: 16px; color: #32404f;
         }
         .textSection p { font-size: 16px; line-height: 1.8; color: rgba(50,64,79,0.58); }
         .subhead { font-size: 16px; opacity: 0.7; margin-bottom: 8px; margin-top: -8px; }
@@ -557,7 +557,7 @@ export default function CreatorPlatform() {
           font-family: var(--font-serif);
           font-size: clamp(22px, 3vw, 32px);
           font-weight: 600; line-height: 1.2;
-          margin-bottom: 16px; color: rgba(50,64,79,0.58);
+          margin-bottom: 16px; color: #32404f;
         }
         .insightsLeft p { font-size: 15px; line-height: 1.8; color: rgba(50,64,79,0.58); }
         .insightsRight { flex: 1; display: flex; flex-direction: column; gap: 24px; }
