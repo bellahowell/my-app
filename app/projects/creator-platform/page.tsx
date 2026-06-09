@@ -109,7 +109,7 @@ export default function CreatorPlatform() {
 
         <div className="coreFlows">
           <div className="coreFlow">
-            <div className="mockupPhone"><video src="/see what affiliates say.mov" autoPlay loop muted playsInline className="mockupVideo" /></div>
+            <div className="mockupPhone"><video src="/seewhataffiliatessay.mov" autoPlay loop muted playsInline className="mockupVideo" /></div>
             <p>Added "See what affiliates say" in the product listing</p>
           </div>
           <div className="coreFlow">
