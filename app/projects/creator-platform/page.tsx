@@ -606,6 +606,8 @@ export default function CreatorPlatform() {
           width: 220px; height: 420px; flex-shrink: 0;
           border-radius: 28px; overflow: hidden;
           object-fit: cover; display: block;
+          object-position: center;
+          transform: scale(1.18);
         }
         .designTag {
           display: inline-block;
