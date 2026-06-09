@@ -215,7 +215,7 @@ export default function CreatorPlatform() {
             <p>Our first prototype followed TikTok's existing navigation structure, keeping the same multi-screen flow — we only added affiliate rating badges to help users quickly assess brand trustworthiness without changing how they navigate.</p>
             <p>However, user testing revealed that the multi-screen navigation still created too much cognitive load — affiliates had to hold too much context in their head just to get to the information they needed.</p>
           </div>
-          <div className="phonePlaceholder" />
+          <video src="/inboxvideo.mov" autoPlay loop muted playsInline className="protoVideo" />
         </div>
 
         <div className="protoRow">
@@ -223,7 +223,7 @@ export default function CreatorPlatform() {
             <h3>Shop Page</h3>
             <p>Another part of our prototype followed TikTok's existing Shop page flow. However, the affiliate ratings were buried far down the page, requiring users to scroll significantly before reaching the information most relevant to their partnership decision.</p>
           </div>
-          <div className="phonePlaceholder" />
+          <video src="/shoppagevideo.mov" autoPlay loop muted playsInline className="protoVideo" />
         </div>
 
         <hr className="divider" />
@@ -593,6 +593,7 @@ export default function CreatorPlatform() {
         .protoText { flex: 1; }
         .protoText h3 { font-size: 18px; font-weight: 600; color: #111; margin-bottom: 10px; }
         .protoText p  { font-size: 15px; line-height: 1.8; color: #32404f; margin-bottom: 8px; }
+        .protoVideo { width: 220px; flex-shrink: 0; border-radius: 16px; display: block; mix-blend-mode: multiply; }
 
         /* ===== DESIGN ROWS (second round) ===== */
         .designRow { margin-bottom: 56px; }
