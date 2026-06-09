@@ -647,7 +647,7 @@ export default function CreatorPlatform() {
         .reflections { display: flex; gap: 32px; margin: 24px 0; flex-wrap: wrap; }
         .reflection { flex: 1; min-width: 240px; }
         .reflection h3 { font-family: var(--font-garamond); font-size: 24px; font-weight: 500; color: #111; margin-bottom: 10px; }
-        .landingVideo { width: 130px; border-radius: 16px; mix-blend-mode: multiply; flex-shrink: 0; }
+        .landingVideo { width: 220px; border-radius: 16px; mix-blend-mode: multiply; flex-shrink: 0; }
         .reflection p  { font-size: 15px; line-height: 1.8; color: #32404f; }
       `}</style>
     </main>
