@@ -186,7 +186,7 @@ export default function CreatorPlatform() {
             <img src="/1stuserflow.png" alt="User flow 1" className="flowImg" />
             <div className="flowText">
               <span className="sectionLabel">USER FLOW 1:</span>
-              <p>Starts in the inbox, where creators naturally receive partnership requests, and introduces an affiliate rating filter that turns complex credibility signals into simple categories like "Trusted" or "Good" — helping creators quickly identify reliable collaborations without feeling overwhelmed.</p>
+              <p>Starts in the inbox, where creators naturally receive partnership requests, and introduces an affiliate rating filter that turns complex credibility signals into simple categories like "Trusted" or "Good", helping creators quickly identify reliable collaborations without feeling overwhelmed.</p>
             </div>
           </div>
           <div className="userFlowRow">
@@ -208,8 +208,8 @@ export default function CreatorPlatform() {
         <div className="protoRow">
           <div className="protoText">
             <h3>Inbox Page</h3>
-            <p>Our first prototype followed TikTok's existing navigation structure, keeping the same multi-screen flow — we only added affiliate rating badges to help users quickly assess brand trustworthiness without changing how they navigate.</p>
-            <p>However, user testing revealed that the multi-screen navigation still created too much cognitive load — affiliates had to hold too much context in their head just to get to the information they needed.</p>
+            <p>Our first prototype followed TikTok's existing navigation structure, keeping the same multi-screen flow, we only added affiliate rating badges to help users quickly assess brand trustworthiness without changing how they navigate.</p>
+            <p>However, user testing revealed that the multi-screen navigation still created too much cognitive load, affiliates had to hold too much context in their head just to get to the information they needed.</p>
           </div>
           <video src="/inboxvideo.mov" autoPlay loop muted playsInline className="protoVideo" />
         </div>
@@ -384,11 +384,11 @@ export default function CreatorPlatform() {
         <div className="reflections">
           <div className="reflection">
             <h3>Staying open to the unexpected.</h3>
-            <p>This project taught me to resist forming a solution too early — the most meaningful design decisions came from staying open to what users implied, not just what I expected to hear.</p>
+            <p>This project taught me to resist forming a solution too early, the most meaningful design decisions came from staying open to what users implied, not just what I expected to hear.</p>
           </div>
           <div className="reflection">
             <h3>Design for the system.</h3>
-            <p>It's not just about designing an aesthetic feature — it has to fit naturally into the existing system and match the way users already think.</p>
+            <p>It's not just about designing an aesthetic feature, it has to fit naturally into the existing system and match the way users already think.</p>
           </div>
         </div>
 
@@ -399,7 +399,7 @@ export default function CreatorPlatform() {
           min-height: 100vh;
           background: #fff;
           font-family: var(--font-sans, Arial, sans-serif);
-          color: #32404f;
+          color: rgba(50,64,79,0.58);
         }
         .page p { color: rgba(50,64,79,0.58); }
 
@@ -515,9 +515,9 @@ export default function CreatorPlatform() {
           font-family: var(--font-serif);
           font-size: clamp(22px, 3vw, 32px);
           font-weight: 600; line-height: 1.2;
-          margin-bottom: 16px; color: #32404f;
+          margin-bottom: 16px; color: rgba(50,64,79,0.58);
         }
-        .textSection p { font-size: 16px; line-height: 1.8; color: #32404f; }
+        .textSection p { font-size: 16px; line-height: 1.8; color: rgba(50,64,79,0.58); }
         .subhead { font-size: 16px; opacity: 0.7; margin-bottom: 8px; margin-top: -8px; }
 
         /* ===== PLACEHOLDERS ===== */
@@ -548,7 +548,7 @@ export default function CreatorPlatform() {
         }
         .coreFlowText { flex: 1; }
         .coreFlowText p { font-size: 18px; font-weight: 500; color: #111; line-height: 1.4; margin-bottom: 8px; }
-        .coreFlowText .caption { font-size: 15px; font-weight: 400; color: #32404f; opacity: 0.8; }
+        .coreFlowText .caption { font-size: 15px; font-weight: 400; color: rgba(50,64,79,0.58); }
 
         /* ===== INSIGHTS LAYOUT (2-col) ===== */
         .insightsLayout { display: flex; gap: 48px; margin: 32px 0; align-items: flex-start; }
@@ -557,14 +557,14 @@ export default function CreatorPlatform() {
           font-family: var(--font-serif);
           font-size: clamp(22px, 3vw, 32px);
           font-weight: 600; line-height: 1.2;
-          margin-bottom: 16px; color: #32404f;
+          margin-bottom: 16px; color: rgba(50,64,79,0.58);
         }
-        .insightsLeft p { font-size: 15px; line-height: 1.8; color: #32404f; }
+        .insightsLeft p { font-size: 15px; line-height: 1.8; color: rgba(50,64,79,0.58); }
         .insightsRight { flex: 1; display: flex; flex-direction: column; gap: 24px; }
         .insightItem {}
         .insightNum { display: block; font-size: 11px; letter-spacing: 1.5px; color: rgba(50,64,79,0.58); font-family: var(--font-mono); text-transform: uppercase; margin-bottom: 4px; }
         .insightItem h3 { font-size: 15px; font-weight: 600; color: #111; margin-bottom: 4px; }
-        .insightItem p  { font-size: 14px; line-height: 1.7; color: #32404f; }
+        .insightItem p  { font-size: 14px; line-height: 1.7; color: rgba(50,64,79,0.58); }
 
         /* ===== QUOTES ===== */
         .quotesSection { margin: 32px 0; }
@@ -597,13 +597,13 @@ export default function CreatorPlatform() {
         .userFlowRow { display: flex; gap: 40px; align-items: flex-start; }
         .flowImg { flex: 1; width: 0; min-width: 0; border-radius: 8px; display: block; }
         .flowText { flex: 0 0 220px; }
-        .flowText p { font-size: 14px; line-height: 1.7; color: #32404f; margin-top: 8px; }
+        .flowText p { font-size: 14px; line-height: 1.7; color: rgba(50,64,79,0.58); margin-top: 8px; }
 
         /* ===== PROTO ROWS (first round) ===== */
         .protoRow { display: flex; gap: 40px; align-items: flex-start; margin-bottom: 48px; }
         .protoText { flex: 1; }
         .protoText h3 { font-size: 18px; font-weight: 600; color: #111; margin-bottom: 10px; }
-        .protoText p  { font-size: 15px; line-height: 1.8; color: #32404f; margin-bottom: 8px; }
+        .protoText p  { font-size: 15px; line-height: 1.8; color: rgba(50,64,79,0.58); margin-bottom: 8px; }
         .protoVideo { width: 220px; flex-shrink: 0; border-radius: 16px; display: block; mix-blend-mode: multiply; }
 
         /* ===== DESIGN ROWS (second round) ===== */
@@ -619,7 +619,7 @@ export default function CreatorPlatform() {
         .designPhone { width: 220px; border-radius: 16px; display: block; }
         .designText { flex: 1; }
         .designText h3 { font-size: 21px; font-weight: 400; color: #111; margin-bottom: 12px; line-height: 1.3; }
-        .designText p  { font-size: 15px; line-height: 1.8; color: #32404f; margin-bottom: 10px; }
+        .designText p  { font-size: 15px; line-height: 1.8; color: rgba(50,64,79,0.58); margin-bottom: 10px; }
 
         /* ===== BEFORE / AFTER ===== */
         .beforeAfter { margin: 32px 0 48px; }
@@ -634,20 +634,20 @@ export default function CreatorPlatform() {
         /* ===== ANNOTATED IMAGE ===== */
         .annotatedRow { display: flex; align-items: center; gap: 24px; margin: 32px 0; }
         .annotatedImg { width: 220px; flex-shrink: 0; display: block; border-radius: 12px; mix-blend-mode: multiply; }
-        .annotation { flex: 1; font-size: 13px; line-height: 1.6; color: #32404f; text-align: center; }
+        .annotation { flex: 1; font-size: 13px; line-height: 1.6; color: rgba(50,64,79,0.58); text-align: center; }
 
         /* ===== WHERE WE LANDED ===== */
         .landingRow { display: flex; gap: 40px; align-items: center; margin-bottom: 48px; }
         .landingRow.reverse { flex-direction: row-reverse; }
         .landingText { flex: 1; }
-        .landingText p { font-size: 15px; line-height: 1.8; color: #32404f; margin-top: 8px; }
+        .landingText p { font-size: 15px; line-height: 1.8; color: rgba(50,64,79,0.58); margin-top: 8px; }
 
         /* ===== REFLECTION ===== */
         .reflections { display: flex; gap: 32px; margin: 24px 0; flex-wrap: wrap; }
         .reflection { flex: 1; min-width: 240px; }
         .reflection h3 { font-family: var(--font-garamond); font-size: 24px; font-weight: 500; color: #111; margin-bottom: 10px; }
         .landingVideo { width: 220px; border-radius: 16px; mix-blend-mode: multiply; flex-shrink: 0; }
-        .reflection p  { font-size: 15px; line-height: 1.8; color: #32404f; }
+        .reflection p  { font-size: 15px; line-height: 1.8; color: rgba(50,64,79,0.58); }
       `}</style>
     </main>
   );
