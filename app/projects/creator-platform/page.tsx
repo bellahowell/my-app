@@ -97,20 +97,26 @@ export default function CreatorPlatform() {
 
         {/* 3 phone placeholders side by side */}
         <div className="coreFlows">
-          <div className="coreFlow">
+          <div className="coreFlowRow">
             <video src="/seewhataffiliatessay.mov" autoPlay loop muted playsInline className="coreVideo" />
-            <p>Added "See what affiliates say" in the product listing</p>
-            <p className="caption">Affiliate feedback lives next to the commission rate, exactly where creators look first when evaluating a product.</p>
+            <div className="coreFlowText">
+              <p>Added "See what affiliates say" in the product listing</p>
+              <p className="caption">Affiliate feedback lives next to the commission rate, exactly where creators look first when evaluating a product.</p>
+            </div>
           </div>
-          <div className="coreFlow">
+          <div className="coreFlowRow">
             <video src="/filtermessages.mov" autoPlay loop muted playsInline className="coreVideo" />
-            <p>Filtering collage messages</p>
-            <p className="caption">An organized way to know relationship with the brand & the ability to filter by affiliate rating.</p>
+            <div className="coreFlowText">
+              <p>Filtering collage messages</p>
+              <p className="caption">An organized way to know relationship with the brand & the ability to filter by affiliate rating.</p>
+            </div>
           </div>
-          <div className="coreFlow">
+          <div className="coreFlowRow">
             <video src="/productmessagepage.mov" autoPlay loop muted playsInline className="coreVideo" />
-            <p>Filtering collab messages</p>
-            <p className="caption">Embedded reviews inside the brand message page, putting the information exactly where the decision is already happening.</p>
+            <div className="coreFlowText">
+              <p>Filtering collab messages</p>
+              <p className="caption">Embedded reviews inside the brand message page, putting the information exactly where the decision is already happening.</p>
+            </div>
           </div>
         </div>
 
@@ -516,12 +522,16 @@ export default function CreatorPlatform() {
         }
 
         /* ===== CORE FLOWS ===== */
-        .coreFlows { display: flex; gap: 24px; margin: 24px 0 32px; align-items: flex-start; }
-        .coreFlow { flex: 1; display: flex; flex-direction: column; gap: 8px; }
-        .coreFlow p { font-size: 14px; font-weight: 500; color: #111; line-height: 1.4; }
-        .coreFlow .caption { font-size: 13px; font-weight: 400; color: #32404f; opacity: 0.8; }
-        .coreFlow .phonePlaceholder { width: 100%; height: 320px; }
-        .coreVideo { width: 100%; display: block; border-radius: 16px; }
+        .coreFlows { display: flex; flex-direction: column; gap: 48px; margin: 24px 0 32px; }
+        .coreFlowRow { display: flex; align-items: center; gap: 48px; }
+        .coreVideo {
+          width: 340px; flex-shrink: 0; display: block;
+          border-radius: 16px;
+          mix-blend-mode: multiply;
+        }
+        .coreFlowText { flex: 1; }
+        .coreFlowText p { font-size: 18px; font-weight: 500; color: #111; line-height: 1.4; margin-bottom: 8px; }
+        .coreFlowText .caption { font-size: 15px; font-weight: 400; color: #32404f; opacity: 0.8; }
 
         /* ===== KEY INSIGHTS ===== */
         .insights { display: flex; gap: 20px; margin: 24px 0 32px; flex-wrap: wrap; }
