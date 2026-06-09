@@ -630,7 +630,7 @@ export default function CreatorPlatform() {
         .beforeAfter h3 { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(50,64,79,0.58); font-family: var(--font-mono); margin-bottom: 20px; }
         .baThreeCols { display: flex; gap: 24px; align-items: flex-start; }
         .baThreeCol { flex: 0 0 220px; }
-        .baThreeColText { flex: 1; }
+        .baThreeColText { flex: 1; padding-top: 20px; }
         .baLabel { display: block; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(50,64,79,0.58); font-family: var(--font-mono); margin-bottom: 10px; }
         .baThreeColText p { font-size: 13px; line-height: 1.7; color: #707070; margin-bottom: 8px; }
         .baMediaSm { width: 100%; display: block; border-radius: 12px; mix-blend-mode: multiply; }
