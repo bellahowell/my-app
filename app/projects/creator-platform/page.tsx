@@ -313,13 +313,13 @@ export default function CreatorPlatform() {
           <div className="baCols">
             <div className="baCol">
               <span className="baLabel">BEFORE</span>
-              <div className="imgPlaceholder" />
+              <video src="/productpagebefore.mov" autoPlay loop muted playsInline className="baMedia" />
               <p>The "Shop Performance" page was buried within the product section. Users had to scroll and select the brand to access it.</p>
               <p>The "Affiliate Feedback" rating appeared as the final category under Shop Performance, making it easy to overlook. It was also not clickable.</p>
             </div>
             <div className="baCol">
               <span className="baLabel">AFTER</span>
-              <div className="imgPlaceholder" />
+              <video src="/productpageafter.mov" autoPlay loop muted playsInline className="baMedia" />
               <p>A more visible and accessible button now appears as soon as users open a product listing.</p>
               <p>Selecting the button takes users directly to a page with affiliate reviews and ratings.</p>
             </div>
@@ -331,11 +331,12 @@ export default function CreatorPlatform() {
           <div className="baCols">
             <div className="baCol">
               <span className="baLabel">BEFORE</span>
-              <div className="imgPlaceholder" />
+              <img src="/affiliatereviewbefore.png" alt="Affiliate review before" className="baMedia" />
             </div>
             <div className="baCol">
               <span className="baLabel">AFTER</span>
-              <div className="imgPlaceholder" />
+              <img src="/affiliatereviewafter.png" alt="Affiliate review after" className="baMedia" />
+              <img src="/affiliatereviewafter2.png" alt="Affiliate review after 2" className="baMedia" style={{marginTop: '12px'}} />
               <p>Added review count to show how many affiliates had shared feedback, making the rating feel more trustworthy.</p>
               <p>Added a filter option so affiliates can sort reviews by the type of feedback they want to see most.</p>
             </div>
@@ -616,6 +617,7 @@ export default function CreatorPlatform() {
         .baCol { flex: 1; }
         .baLabel { display: block; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #32404f; opacity: 0.5; margin-bottom: 10px; }
         .baCol p { font-size: 14px; line-height: 1.7; color: #707070; margin-bottom: 8px; }
+        .baMedia { width: 100%; display: block; border-radius: 12px; mix-blend-mode: multiply; margin-bottom: 14px; }
 
         /* ===== WHERE WE LANDED ===== */
         .landing { display: flex; gap: 32px; margin: 24px 0 32px; flex-wrap: wrap; }
