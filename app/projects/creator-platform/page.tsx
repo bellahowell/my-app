@@ -41,7 +41,9 @@ export default function CreatorPlatform() {
         <div className="heroInner">
           <p className="heroLabel">TIKTOK ⟡ CONCEPT 2026</p>
           <h1>Assisting TikTok Affiliates Discover Brands with Confidence</h1>
-          <div className="heroMockup" />
+          <div className="heroMockup">
+            <img src="/tiktokmainpic.png" alt="TikTok main page" className="heroImg" />
+          </div>
         </div>
       </section>
 
@@ -238,7 +240,7 @@ export default function CreatorPlatform() {
         <span className="sectionLabel">CORE FLOWS</span>
 
         <div className="mockupRow">
-          <div className="mockupPhone" />
+          <video className="mockupPhone" src="/see what affiliates say.mov" autoPlay loop muted playsInline />
           <div className="mockupText">
             <span className="designTag">DESIGN 1</span>
             <h3>Added "See what affiliates say" in the product listing</h3>
@@ -253,7 +255,7 @@ export default function CreatorPlatform() {
         </div>
 
         <div className="mockupRow reverse">
-          <div className="mockupPhone" />
+          <video className="mockupPhone" src="/filtering system.mov" autoPlay loop muted playsInline />
           <div className="mockupText">
             <span className="designTag">DESIGN 2</span>
             <h3>Filtering collage messages</h3>
@@ -268,7 +270,7 @@ export default function CreatorPlatform() {
         </div>
 
         <div className="mockupRow">
-          <div className="mockupPhone" />
+          <video className="mockupPhone" src="/collab message.mov" autoPlay loop muted playsInline />
           <div className="mockupText">
             <span className="designTag">DESIGN 3</span>
             <h3>Filtering collab messages</h3>
@@ -473,10 +475,13 @@ export default function CreatorPlatform() {
           max-width: 640px;
         }
         .heroMockup {
-          width: 100%; height: 320px;
-          background: rgba(255,255,255,0.05);
+          width: 100%;
           border-radius: 16px 16px 0 0;
-          border: 1px dashed rgba(255,255,255,0.15);
+          overflow: hidden;
+        }
+        .heroImg {
+          width: 100%; display: block;
+          border-radius: 16px 16px 0 0;
         }
 
         /* ===== CONTAINER ===== */
@@ -598,9 +603,9 @@ export default function CreatorPlatform() {
         }
         .mockupRow.reverse { flex-direction: row-reverse; }
         .mockupPhone {
-          width: 220px; flex-shrink: 0; height: 420px;
-          background: #f2f0ed; border-radius: 28px;
-          border: 1px dashed #ccc;
+          width: 220px; flex-shrink: 0;
+          border-radius: 28px; overflow: hidden;
+          object-fit: cover;
         }
         .designTag {
           display: inline-block;
