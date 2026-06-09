@@ -41,7 +41,7 @@ export default function CreatorPlatform() {
         <div className="heroInner">
           <p className="heroLabel">TIKTOK ⟡ CONCEPT 2026</p>
           <h1>Assisting TikTok Affiliates Discover Brands with Confidence</h1>
-          <img src="/titktokheader.png" alt="TikTok affiliate app mockups" className="heroImg" />
+          <img src="/titktoklandingpageimage.png" alt="TikTok affiliate app mockups" className="heroImg" />
         </div>
       </section>
 
