@@ -161,18 +161,49 @@ export default function CreatorPlatform() {
         </div>
 
         {/* INTERVIEW TOGGLE */}
-        <button className="interviewToggle" onClick={() => setInterviewOpen(v => !v)}>
-          View user interview questions {interviewOpen ? "−" : "+"}
-        </button>
+        <div className="interviewToggleWrap">
+          <button className="interviewToggle" onClick={() => setInterviewOpen(v => !v)}>
+            View user interview questions +
+          </button>
+        </div>
         {interviewOpen && (
-          <div className="interviewQuestions">
-            <p><strong>Introduction:</strong> I'm working on a project about affiliate creators and brand partnerships. I am curious to learn more about your experience in the field.</p>
-            <p><strong>Leading Questions:</strong> Can you tell me a bit about your experience with affiliate marketing? How long have you been doing it and what kind of brands do you usually work with?</p>
-            <p><strong>Current situation:</strong> Can you walk me through the last time you decided to work with a brand? How did you find them and what made you say yes? What does your process usually look like from first contact to posting?</p>
-            <p><strong>Pain Point questions:</strong> Have you ever had a partnership that didn't go as expected? Have there been times where communication or payment didn't go as planned?</p>
-            <p><strong>Trust / lack of it:</strong> How do you usually decide if a brand is trustworthy? What signals or signs do you look for? Have you ever felt unsure before agreeing to a partnership?</p>
-            <p><strong>Existing Gaps:</strong> Is there anything you wish you knew before working with a brand? What would make choosing partnerships easier or less risky?</p>
-            <p><strong>Open ended:</strong> Is there anything about working with brands that we didn't cover that you think is important?</p>
+          <div className="interviewOverlay" onClick={() => setInterviewOpen(false)}>
+            <div className="interviewModal" onClick={e => e.stopPropagation()}>
+              <button className="interviewClose" onClick={() => setInterviewOpen(false)}>×</button>
+              <p><strong>Introduction:</strong><br />I'm working on a project about affiliate creators and brand partnerships. I am curious to learn more about your experience in the field.</p>
+              <p><strong>Leading Questions:</strong></p>
+              <ul>
+                <li>Can you tell me a bit about your experience with affiliate marketing?</li>
+                <li>How long have you been doing it and what kind of brands do you usually work with?</li>
+              </ul>
+              <p><strong>Current situation:</strong></p>
+              <ul>
+                <li>Can you walk me through the last time you decided to work with a brand?</li>
+                <li>How did you find them and what made you say yes?</li>
+                <li>What does your process usually look like from first contact to posting?</li>
+              </ul>
+              <p><strong>Pain Point questions:</strong></p>
+              <ul>
+                <li>Have you ever had a partnership that didn't go as expected?</li>
+                <li>(if yes, What made that experience frustrating or difficult?/What did you do in that situation?/how did that impact you?) ask follow up questions.</li>
+                <li>Have there been times where communication or payment didn't go as planned?</li>
+              </ul>
+              <p><strong>Trust/ lack of it:</strong></p>
+              <ul>
+                <li>How do you usually decide if a brand is trustworthy?</li>
+                <li>What signals or signs do you look for?</li>
+                <li>Have you ever felt unsure before agreeing to a partnership?</li>
+              </ul>
+              <p><strong>Existing Gaps:</strong></p>
+              <ul>
+                <li>Is there anything you wish you knew before working with a brand?</li>
+                <li>What would make choosing partnerships easier or less risky?</li>
+              </ul>
+              <p><strong>End with an open ended question:</strong></p>
+              <ul>
+                <li>Is there anything about working with brands that we didn't cover that you think is important?</li>
+              </ul>
+            </div>
           </div>
         )}
 
@@ -582,19 +613,34 @@ export default function CreatorPlatform() {
         }
 
         /* ===== INTERVIEW TOGGLE ===== */
+        .interviewToggleWrap { display: flex; justify-content: center; margin: 24px 0; }
         .interviewToggle {
-          background: #000; color: #fff;
-          border: none; border-radius: 999px;
-          padding: 12px 24px; font-size: 16px;
-          cursor: pointer; margin: 24px 0;
-          transition: opacity 0.2s;
+          background: none; color: rgba(50,64,79,0.7);
+          border: 1.5px solid rgba(50,64,79,0.3); border-radius: 999px;
+          padding: 10px 28px; font-size: 13px; letter-spacing: 1px;
+          font-family: var(--font-mono); text-transform: uppercase;
+          cursor: pointer; transition: border-color 0.2s, color 0.2s;
         }
-        .interviewToggle:hover { opacity: 0.8; }
-        .interviewQuestions {
-          background: #f7f7f7; border-radius: 12px;
-          padding: 24px 28px; margin-bottom: 24px;
+        .interviewToggle:hover { border-color: rgba(50,64,79,0.7); color: rgba(50,64,79,1); }
+        .interviewOverlay {
+          position: fixed; inset: 0; background: rgba(0,0,0,0.35);
+          z-index: 1000; display: flex; align-items: center; justify-content: center;
         }
-        .interviewQuestions p { font-size: 14px; line-height: 1.8; color: #32404f; margin-bottom: 12px; }
+        .interviewModal {
+          background: #fff; border-radius: 16px;
+          padding: 40px 44px; max-width: 640px; width: 90%;
+          max-height: 80vh; overflow-y: auto; position: relative;
+          box-shadow: 0 8px 40px rgba(0,0,0,0.12);
+        }
+        .interviewModal p { font-size: 14px; line-height: 1.8; color: #32404f; margin: 12px 0 4px; }
+        .interviewModal ul { padding-left: 20px; margin: 0 0 12px; }
+        .interviewModal ul li { font-size: 14px; line-height: 1.8; color: #32404f; }
+        .interviewClose {
+          position: absolute; top: 16px; right: 20px;
+          background: none; border: none; font-size: 22px;
+          color: rgba(50,64,79,0.5); cursor: pointer; line-height: 1;
+        }
+        .interviewClose:hover { color: rgba(50,64,79,1); }
 
         /* ===== USER FLOWS ===== */
         .userFlows { display: flex; flex-direction: column; gap: 48px; margin: 24px 0 32px; }
