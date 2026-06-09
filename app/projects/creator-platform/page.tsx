@@ -310,37 +310,47 @@ export default function CreatorPlatform() {
 
         <div className="beforeAfter">
           <h3>CHANGES MADE TO PRODUCT RESEARCH PAGE</h3>
-          <div className="baCols">
-            <div className="baCol">
+          <div className="baThreeCols">
+            <div className="baThreeCol">
               <span className="baLabel">BEFORE</span>
-              <video src="/productpagebefore.mov" autoPlay loop muted playsInline className="baMedia" />
-              <p>The "Shop Performance" page was buried within the product section. Users had to scroll and select the brand to access it.</p>
-              <p>The "Affiliate Feedback" rating appeared as the final category under Shop Performance, making it easy to overlook. It was also not clickable.</p>
+              <video src="/productpagebefore.mov" autoPlay loop muted playsInline className="baMediaSm" />
             </div>
-            <div className="baCol">
-              <span className="baLabel">AFTER</span>
-              <video src="/productpageafter.mov" autoPlay loop muted playsInline className="baMedia" />
+            <div className="baThreeColText">
+              <p>The "Shop Performance" page was buried within the product section. Users had to scroll and select the brand to access it.</p>
+              <p>The "Affiliate Feedback" rating appeared as the final category under Shop Performance, making it easy to overlook. It was also not clickable, so users could not access additional reviews or ratings from this page.</p>
               <p>A more visible and accessible button now appears as soon as users open a product listing.</p>
               <p>Selecting the button takes users directly to a page with affiliate reviews and ratings.</p>
+            </div>
+            <div className="baThreeCol">
+              <span className="baLabel">AFTER</span>
+              <video src="/productpageafter.mov" autoPlay loop muted playsInline className="baMediaSm" />
             </div>
           </div>
         </div>
 
         <div className="beforeAfter">
           <h3>CHANGES MADE TO AFFILIATE REVIEW PAGE</h3>
-          <div className="baCols">
-            <div className="baCol">
+          <div className="baThreeCols">
+            <div className="baThreeCol">
               <span className="baLabel">BEFORE</span>
-              <img src="/affiliatereviewbefore.png" alt="Affiliate review before" className="baMedia" />
+              <img src="/affiliatereviewbefore.png" alt="Affiliate review before" className="baMediaSm" />
             </div>
-            <div className="baCol">
-              <span className="baLabel">AFTER</span>
-              <img src="/affiliatereviewafter.png" alt="Affiliate review after" className="baMedia" />
-              <img src="/affiliatereviewafter2.png" alt="Affiliate review after 2" className="baMedia" style={{marginTop: '12px'}} />
+            <div className="baThreeColText">
               <p>Added review count to show how many affiliates had shared feedback, making the rating feel more trustworthy.</p>
               <p>Added a filter option so affiliates can sort reviews by the type of feedback they want to see most.</p>
             </div>
+            <div className="baThreeCol">
+              <span className="baLabel">AFTER</span>
+              <img src="/affiliatereviewafter.png" alt="Affiliate review after" className="baMediaSm" />
+            </div>
           </div>
+        </div>
+
+        {/* AFFILIATE REVIEW 2 — standalone centered with side annotations */}
+        <div className="annotatedRow">
+          <p className="annotation">Users can view reviews based on star ratings from other affiliates.</p>
+          <img src="/affiliatereviewafter2.png" alt="Affiliate review filter" className="annotatedImg" />
+          <p className="annotation">They can also filter reviews from the company's categories of products.</p>
         </div>
 
         <hr className="divider" />
@@ -351,17 +361,20 @@ export default function CreatorPlatform() {
           <h2>Moving forward.</h2>
         </section>
 
-        <div className="imgPlaceholder wide" />
-
-        <div className="landing">
-          <div className="landingItem">
+        <div className="landingRow">
+          <div className="phonePlaceholder" />
+          <div className="landingText">
             <span className="designTag">DESIGN 1 + DESIGN 2 + DESIGN 3</span>
             <p>We combined affiliate reviews, trust filtering, and inbox organization into a single flow, giving creators multiple ways to evaluate and manage brand opportunities in one place.</p>
           </div>
-          <div className="landingItem">
+        </div>
+
+        <div className="landingRow reverse">
+          <div className="landingText">
             <span className="designTag">DESIGN 4</span>
             <p>We also retained the product listing flow, relocating "See what affiliates say" next to the commission rate based on user feedback, which reframed how we approached placement across the rest of the design.</p>
           </div>
+          <div className="phonePlaceholder" />
         </div>
 
         <hr className="divider" />
@@ -613,16 +626,23 @@ export default function CreatorPlatform() {
         /* ===== BEFORE / AFTER ===== */
         .beforeAfter { margin: 32px 0 48px; }
         .beforeAfter h3 { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #32404f; opacity: 0.5; margin-bottom: 20px; }
-        .baCols { display: flex; gap: 32px; }
-        .baCol { flex: 1; }
+        .baThreeCols { display: flex; gap: 24px; align-items: flex-start; }
+        .baThreeCol { flex: 0 0 160px; }
+        .baThreeColText { flex: 1; }
         .baLabel { display: block; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #32404f; opacity: 0.5; margin-bottom: 10px; }
-        .baCol p { font-size: 14px; line-height: 1.7; color: #707070; margin-bottom: 8px; }
-        .baMedia { width: 100%; display: block; border-radius: 12px; mix-blend-mode: multiply; margin-bottom: 14px; }
+        .baThreeColText p { font-size: 13px; line-height: 1.7; color: #707070; margin-bottom: 8px; }
+        .baMediaSm { width: 100%; display: block; border-radius: 12px; mix-blend-mode: multiply; }
+
+        /* ===== ANNOTATED IMAGE ===== */
+        .annotatedRow { display: flex; align-items: center; gap: 24px; margin: 32px 0; }
+        .annotatedImg { width: 220px; flex-shrink: 0; display: block; border-radius: 12px; mix-blend-mode: multiply; }
+        .annotation { flex: 1; font-size: 13px; line-height: 1.6; color: #32404f; text-align: center; }
 
         /* ===== WHERE WE LANDED ===== */
-        .landing { display: flex; gap: 32px; margin: 24px 0 32px; flex-wrap: wrap; }
-        .landingItem { flex: 1; min-width: 240px; }
-        .landingItem p { font-size: 15px; line-height: 1.8; color: #32404f; margin-top: 8px; }
+        .landingRow { display: flex; gap: 40px; align-items: center; margin-bottom: 48px; }
+        .landingRow.reverse { flex-direction: row-reverse; }
+        .landingText { flex: 1; }
+        .landingText p { font-size: 15px; line-height: 1.8; color: #32404f; margin-top: 8px; }
 
         /* ===== REFLECTION ===== */
         .reflections { display: flex; gap: 32px; margin: 24px 0; flex-wrap: wrap; }
