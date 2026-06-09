@@ -500,10 +500,10 @@ export default function CreatorPlatform() {
         }
 
         /* ===== META ===== */
-        .meta { display: flex; gap: 48px; flex-wrap: wrap; padding: 8px 0 40px; }
+        .meta { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; padding: 8px 0 40px; }
         .metaItem { display: flex; flex-direction: column; gap: 4px; }
         .metaLabel { font-size: 11px; letter-spacing: 1.5px; color: rgba(50,64,79,0.58); font-family: var(--font-mono); text-transform: uppercase; }
-        .metaValue { font-size: 14px; color: #32404f; }
+        .metaValue { font-size: 14px; color: rgba(50,64,79,0.58); font-family: var(--font-mono); }
 
         /* ===== DIVIDER ===== */
         .divider { border: none; border-top: 1px solid #e8e8e8; margin: 40px 0; }
