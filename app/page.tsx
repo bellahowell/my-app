@@ -195,13 +195,13 @@ export default function Home() {
 
         /* ===== CARD UNIT ===== */
         .cardUnit { display: flex; flex-direction: column; }
-        .projectCard {
+        .projectCard, :global(.projectCard) {
           display: block;
           text-decoration: none;
           overflow: hidden;
           transition: opacity 0.2s;
         }
-        .projectCard:hover { opacity: 0.5; }
+        .projectCard:hover, :global(.projectCard:hover) { opacity: 0.5; }
         .discordImg { height: 505px; object-fit: cover; }
         .cardImg {
           display: block;
