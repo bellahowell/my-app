@@ -165,8 +165,6 @@ export default function Home() {
         /* ===== CONTENT ===== */
         .content {
           padding: 140px 38px 60px;
-          max-width: 1440px;
-          margin: 0 auto;
         }
 
         /* ===== HERO HEADING ===== */
