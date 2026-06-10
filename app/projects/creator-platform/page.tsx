@@ -428,8 +428,8 @@ export default function CreatorPlatform() {
         .profileButton:hover .hoverContent   { opacity: 1; transform: translateY(0); }
         .profileImage { width: 58px; height: 58px; border-radius: 999px; object-fit: cover; }
         .profileText { margin-left: 18px; }
-        .profileText h3 { font-size: 20px; font-weight: 600; color: #111; }
-        .profileText p  { font-size: 16px; color: #999; margin-top: 2px; }
+        .profileText h3 { font-size: 20px; font-weight: 600; color: #111; font-family: var(--font-mono); }
+        .profileText p  { font-size: 16px; color: #999; margin-top: 2px; font-family: var(--font-mono); }
         .arrowCircle {
           width: 58px; height: 58px; border-radius: 999px;
           background: black; color: white;

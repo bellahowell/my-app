@@ -87,8 +87,8 @@ export default function ProjectPage() {
         }
 
         .profileText { margin-left: 18px; }
-        .profileText h3 { font-size: 20px; font-weight: 600; }
-        .profileText p  { font-size: 16px; color: #999; margin-top: 2px; }
+        .profileText h3 { font-size: 20px; font-weight: 600; font-family: var(--font-mono); }
+        .profileText p  { font-size: 16px; color: #999; margin-top: 2px; font-family: var(--font-mono); }
 
         .arrowCircle {
           width: 58px;
