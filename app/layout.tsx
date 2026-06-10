@@ -26,7 +26,7 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Isabella Howell",
+  title: "Bella Howell",
   description: "UX/UI designer based in San Diego, CA.",
 };
 

@@ -14,7 +14,7 @@ export default function CreatorPlatform() {
         <div className="profileContent">
           <img src="/profile.JPG" alt="profile" className="profileImage" />
           <div className="profileText">
-            <h3>Isabella Howell</h3>
+            <h3>Bella Howell</h3>
             <p>San Diego, CA</p>
           </div>
         </div>
@@ -452,20 +452,20 @@ export default function CreatorPlatform() {
           padding: 20px 38px; border-radius: 999px;
           box-shadow: 0 4px 18px rgba(0,0,0,0.04);
         }
-        .pillNav a {
+        .pillNav a, .pillNav :global(a) {
           text-decoration: none; color: #111;
           font-size: 13px; font-weight: 400;
           font-family: var(--font-mono);
           letter-spacing: 1.5px; text-transform: uppercase;
           position: relative; transition: opacity 0.25s ease;
         }
-        .pillNav a:hover { opacity: 0.6; }
-        .pillNav a::after {
+        .pillNav a:hover, .pillNav :global(a:hover) { opacity: 0.6; }
+        .pillNav a::after, .pillNav :global(a::after) {
           content: ""; position: absolute; left: 0; bottom: -6px;
           width: 0%; height: 2px; background: black;
           transition: width 0.3s ease;
         }
-        .pillNav a:hover::after { width: 100%; }
+        .pillNav a:hover::after, .pillNav :global(a:hover::after) { width: 100%; }
 
         /* ===== HERO ===== */
         .hero {

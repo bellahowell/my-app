@@ -12,7 +12,7 @@ export default function ProjectPage() {
         <div className="profileContent">
           <img src="/profile.JPG" alt="profile" className="profileImage" />
           <div className="profileText">
-            <h3>Isabella Howell</h3>
+            <h3>Bella Howell</h3>
             <p>San Diego, CA</p>
           </div>
         </div>

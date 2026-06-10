@@ -134,7 +134,7 @@ export default function Home() {
           box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
         }
 
-        .pillNav a {
+        .pillNav a, .pillNav :global(a) {
           text-decoration: none;
           color: #111;
           font-size: 13px;
@@ -146,11 +146,9 @@ export default function Home() {
           transition: opacity 0.25s ease;
         }
 
-        .pillNav a:hover {
-          opacity: 0.6;
-        }
+        .pillNav a:hover, .pillNav :global(a:hover) { opacity: 0.6; }
 
-        .pillNav a::after {
+        .pillNav a::after, .pillNav :global(a::after) {
           content: "";
           position: absolute;
           left: 0;
@@ -161,9 +159,7 @@ export default function Home() {
           transition: width 0.3s ease;
         }
 
-        .pillNav a:hover::after {
-          width: 100%;
-        }
+        .pillNav a:hover::after, .pillNav :global(a:hover::after) { width: 100%; }
 
         /* ================= PROFILE BUTTON ================= */
 
