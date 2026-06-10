@@ -183,7 +183,7 @@ export default function CreatorPlatform() {
 
         <div className="userFlows">
           <div className="userFlowRow">
-            <img src="/1stuserflow.png" alt="User flow 1" className="flowImg" />
+            <img src="/userflow1.png" alt="User flow 1" className="flowImg" />
             <div className="flowText">
               <span className="sectionLabel">USER FLOW 1:</span>
               <p>Starts in the inbox, where creators naturally receive partnership requests, and introduces an affiliate rating filter that turns complex credibility signals into simple categories like "Trusted" or "Good", helping creators quickly identify reliable collaborations without feeling overwhelmed.</p>
@@ -194,7 +194,7 @@ export default function CreatorPlatform() {
               <span className="sectionLabel">USER FLOW 2:</span>
               <p>Begins on the home screen during product browsing and leads users to an "About this shop" section where a new affiliate feedback layer gives creators peer-sourced insight into brand reliability, filling a gap that general customer reviews don't address.</p>
             </div>
-            <img src="/2nduserflow.png" alt="User flow 2" className="flowImg" />
+            <img src="/userflow2.png" alt="User flow 2" className="flowImg" />
           </div>
         </div>
 
