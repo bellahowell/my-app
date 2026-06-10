@@ -44,13 +44,15 @@ export default function Home() {
 
           {/* LEFT COLUMN */}
           <div className="bentoCol">
-            <Link href="/projects/creator-platform" className="tikTokCard">
-              <img src="/tiktokproductcard.png" alt="TikTok project" className="tikTokImg" />
-              <div className="tikTokFooter">
+            <div className="cardUnit">
+              <Link href="/projects/creator-platform" className="tikTokCard">
+                <img src="/tiktokproductcard.png" alt="TikTok project" className="tikTokImg" />
+              </Link>
+              <div className="cardMeta">
                 <p className="tikTokTitle">Assisting TikTok affiliates discover brands with confidence</p>
                 <span className="tikTokLabel">TIKTOK ⟡ CONCEPT 2026</span>
               </div>
-            </Link>
+            </div>
             <div className="placeholderCard" style={{height: '505px'}} />
           </div>
 
@@ -175,45 +177,41 @@ export default function Home() {
           gap: 24px;
         }
 
-        /* ===== TIKTOK CARD ===== */
+        /* ===== CARD UNIT ===== */
+        .cardUnit { display: flex; flex-direction: column; }
         .tikTokCard {
           display: block;
           text-decoration: none;
-          background: linear-gradient(to bottom, #fff 4%, #131313 93%);
-          border-radius: 16px;
           overflow: hidden;
-          position: relative;
-          transition: transform 0.4s cubic-bezier(0.22,1,0.36,1);
+          transition: opacity 0.2s;
         }
-        .tikTokCard:hover { transform: scale(1.015); }
+        .tikTokCard:hover { opacity: 0.88; }
         .tikTokImg {
           display: block;
           width: 100%;
           object-fit: cover;
         }
-        .tikTokFooter {
+        .cardMeta {
           display: flex;
-          align-items: flex-end;
+          align-items: baseline;
           justify-content: space-between;
           gap: 16px;
-          padding: 16px 20px 20px;
-          background: #131313;
+          padding: 10px 0 0;
         }
         .tikTokTitle {
           font-family: var(--font-garamond);
           font-size: 18px;
           font-weight: 400;
-          color: #fff;
+          color: #111;
           line-height: 1.3;
           margin: 0;
-          flex: 1;
         }
         .tikTokLabel {
           font-family: var(--font-mono);
           font-size: 11px;
           letter-spacing: 1.5px;
           text-transform: uppercase;
-          color: rgba(255,255,255,0.6);
+          color: rgba(50,64,79,0.58);
           white-space: nowrap;
           flex-shrink: 0;
         }
@@ -221,7 +219,6 @@ export default function Home() {
         /* ===== PLACEHOLDER CARDS ===== */
         .placeholderCard {
           background: #d9d9d9;
-          border-radius: 16px;
           width: 100%;
         }
 
