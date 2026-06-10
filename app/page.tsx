@@ -268,16 +268,41 @@ export default function Home() {
         .socialLinks a:hover { opacity: 0.5; }
 
         /* ===== RESPONSIVE ===== */
-        @media (max-width: 900px) {
-          .profileButton { width: 240px; }
-          h1 { font-size: 36px; }
+
+        /* Tablet landscape (≤1100px) */
+        @media (max-width: 1100px) {
+          .content { padding: 130px 28px 60px; }
+          h1 { font-size: 38px; }
+          .discordImg { height: 380px; }
         }
+
+        /* Tablet portrait (≤900px) */
+        @media (max-width: 900px) {
+          .profileButton { width: 220px; }
+          .profileText h3 { font-size: 15px; }
+          .profileText p  { font-size: 12px; }
+          h1 { font-size: 32px; }
+          .bento { gap: 16px; }
+          .bentoCol { gap: 16px; }
+          .discordImg { height: 320px; }
+          .cardTitle { font-size: 15px; }
+        }
+
+        /* Mobile (≤640px) */
         @media (max-width: 640px) {
           .profileButton { display: none; }
-          .content { padding: 100px 20px 48px; }
-          h1 { font-size: 28px; max-width: 100%; }
-          .bento { grid-template-columns: 1fr; }
-          .footer { flex-direction: column; gap: 16px; align-items: flex-start; }
+          .nav { top: 16px; }
+          .pillNav { gap: 20px; padding: 14px 22px; }
+          .content { padding: 90px 16px 48px; }
+          h1 { font-size: 26px; max-width: 100%; margin-bottom: 24px; }
+          .bento { grid-template-columns: 1fr; gap: 32px; margin-bottom: 40px; }
+          .bentoCol { gap: 32px; }
+          .discordImg { height: auto; }
+          .placeholderCard { height: 260px !important; }
+          .cardMeta { flex-direction: column; gap: 4px; padding: 8px 0 0; }
+          .cardLabel { white-space: normal; }
+          .footer { flex-direction: column; gap: 12px; align-items: flex-start; }
+          .socialLinks { gap: 20px; }
         }
       `}</style>
     </main>
