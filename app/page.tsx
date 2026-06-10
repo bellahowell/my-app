@@ -140,7 +140,8 @@ export default function Home() {
           font-size: 13px;
           font-weight: 400;
           font-family: var(--font-mono);
-          letter-spacing: 0.5px;
+          letter-spacing: 1.5px;
+          text-transform: uppercase;
           position: relative;
           transition: opacity 0.25s ease;
         }
