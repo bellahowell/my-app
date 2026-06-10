@@ -434,8 +434,8 @@ export default function CreatorPlatform() {
           font-size: 36px;
         }
         .hoverText { margin-left: 18px; }
-        .hoverText span { font-size: 20px; color: #111; }
-        .hoverText p    { font-size: 16px; color: #999; margin-top: 2px; }
+        .hoverText span { font-size: 20px; color: #111; font-family: var(--font-mono); }
+        .hoverText p    { font-size: 16px; color: #999; margin-top: 2px; font-family: var(--font-mono); }
 
         /* ===== NAV ===== */
         .nav {
