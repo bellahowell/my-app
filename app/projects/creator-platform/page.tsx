@@ -27,11 +27,14 @@ export default function CreatorPlatform() {
         </div>
       </a>
 
+      {/* MOBILE BACK BUTTON */}
+      <Link href="/" className="mobileBack">← Back</Link>
+
       {/* NAV */}
       <nav className="nav">
         <div className="pillNav">
-          <Link href="/">Work</Link>
           <Link href="/about">About</Link>
+          <Link href="/fun">Fun</Link>
           <a href="/resume">Resume</a>
         </div>
       </nav>
@@ -664,9 +667,22 @@ export default function CreatorPlatform() {
           .flowText { flex: 0 0 180px; }
         }
 
+        /* ===== MOBILE BACK BUTTON ===== */
+        .mobileBack {
+          display: none;
+          position: fixed; top: 20px; left: 20px; z-index: 20;
+          background: rgba(248,248,248,0.9); backdrop-filter: blur(10px);
+          border-radius: 999px; padding: 10px 20px;
+          font-family: var(--font-mono); font-size: 12px;
+          letter-spacing: 1px; text-transform: uppercase;
+          color: #111; text-decoration: none;
+          box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+        }
+
         /* ===== MOBILE (≤640px) ===== */
         @media (max-width: 640px) {
           .profileButton { display: none; }
+          .mobileBack { display: block; }
           .nav { top: 16px; }
           .pillNav { gap: 24px; padding: 14px 24px; }
           .hero { padding: 100px 20px 0; margin-bottom: 40px; }

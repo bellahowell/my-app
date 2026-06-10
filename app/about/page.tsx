@@ -27,8 +27,8 @@ export default function About() {
       {/* NAV (TOP CENTER) */}
       <nav className="nav">
         <div className="pillNav">
-          <Link href="/">Work</Link>
           <Link href="/about">About</Link>
+          <Link href="/fun">Fun</Link>
           <a href="/resume">Resume</a>
         </div>
       </nav>
