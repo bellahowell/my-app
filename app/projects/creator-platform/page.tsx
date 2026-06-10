@@ -70,7 +70,6 @@ export default function CreatorPlatform() {
           </div>
         </div>
 
-        <hr className="divider" />
 
         {/* OVERVIEW */}
         <section className="textSection">
@@ -79,7 +78,6 @@ export default function CreatorPlatform() {
           <p>Social commerce and affiliate marketing have rapidly become one of the largest and fastest-growing sectors of the creator economy, with TikTok Shop emerging as a dominant platform for creator-driven sales. In 2025, TikTok Shop generated over $20.6 billion in U.S. gross merchandise value (GMV), with affiliate creator content driving approximately 42% of all platform sales ("TikTok Shop Affiliate & Creator Statistics"). As affiliate marketing expands, creators face increasing challenges in evaluating which collaboration opportunities are legitimate, trustworthy, and financially worthwhile. User interviews revealed that creators often rely on trial and error to determine whether brands are reliable, with trust developing only after repeated successful interactions such as timely payments and positive communication.</p>
         </section>
 
-        <hr className="divider" />
 
         {/* PROBLEM */}
         <section className="textSection">
@@ -88,7 +86,6 @@ export default function CreatorPlatform() {
           <p>Independent affiliate marketers rely on guesswork to choose brand partnerships. They need to evaluate brand reliability, such as payment and communication, to make informed decisions and avoid risky collaborations.</p>
         </section>
 
-        <hr className="divider" />
 
         {/* SOLUTION */}
         <section className="textSection">
@@ -123,7 +120,6 @@ export default function CreatorPlatform() {
           </div>
         </div>
 
-        <hr className="divider" />
 
         {/* PROCESS & KEY INSIGHTS */}
         <div className="insightsLayout">
@@ -175,7 +171,6 @@ export default function CreatorPlatform() {
           )}
         </div>
 
-        <hr className="divider" />
 
         {/* DESIGN PROCESS — USER FLOWS */}
         <section className="textSection">
@@ -201,7 +196,6 @@ export default function CreatorPlatform() {
           </div>
         </div>
 
-        <hr className="divider" />
 
         {/* FIRST ROUND */}
         <section className="textSection">
@@ -225,7 +219,6 @@ export default function CreatorPlatform() {
           <video src="/shoppagevideo.mov" autoPlay loop muted playsInline className="protoVideo" />
         </div>
 
-        <hr className="divider" />
 
         {/* SECOND ROUND */}
         <section className="textSection">
@@ -298,7 +291,6 @@ export default function CreatorPlatform() {
           </div>
         </div>
 
-        <hr className="divider" />
 
         {/* THIRD ROUND */}
         <section className="textSection">
@@ -352,7 +344,6 @@ export default function CreatorPlatform() {
           <p className="annotation">They can also filter reviews from the company's categories of products.</p>
         </div>
 
-        <hr className="divider" />
 
         {/* WHERE WE LANDED */}
         <section className="textSection">
@@ -376,7 +367,10 @@ export default function CreatorPlatform() {
           <video src="/design4final.mov" autoPlay loop muted playsInline className="landingVideo" />
         </div>
 
-        <hr className="divider" />
+
+        <div className="textSection">
+          <p>If we were to continue this project, we would explore building a dedicated affiliate space within TikTok, where everything seller-related lives in one place. The idea came directly from a participant: <em>"Affiliate marketers, your TikTok app interface should look different, like you should be getting a behind-the-scenes kind of thing."</em></p>
+        </div>
 
         {/* REFLECTION */}
         <section className="textSection">
