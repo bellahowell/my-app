@@ -650,6 +650,62 @@ export default function CreatorPlatform() {
         .reflection h3 { font-family: var(--font-garamond); font-size: 24px; font-weight: 500; color: #111; margin-bottom: 10px; }
         .landingVideo { width: 220px; border-radius: 16px; mix-blend-mode: multiply; flex-shrink: 0; }
         .reflection p  { font-size: 15px; line-height: 1.8; color: rgba(50,64,79,0.58); }
+
+        /* ===== TABLET (≤900px) ===== */
+        @media (max-width: 900px) {
+          .profileButton { width: 240px; }
+          .profileText h3 { font-size: 16px; }
+          .profileText p  { font-size: 13px; }
+          .container { padding: 0 24px 80px; }
+          .twoPhones { gap: 8px; }
+          .designPhone { width: 160px; }
+          .coreVideo, .protoVideo, .baThreeCol, .annotatedImg, .landingVideo { width: 180px; }
+          .quotes { grid-template-columns: repeat(3, 1fr); }
+          .flowText { flex: 0 0 180px; }
+        }
+
+        /* ===== MOBILE (≤640px) ===== */
+        @media (max-width: 640px) {
+          .profileButton { display: none; }
+          .nav { top: 16px; }
+          .pillNav { gap: 24px; padding: 14px 24px; }
+          .hero { padding: 100px 20px 0; margin-bottom: 40px; }
+          .heroInner { max-width: 100%; }
+          h1 { font-size: 32px; }
+          .container { padding: 0 20px 64px; }
+
+          .meta { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+
+          .coreFlowRow { flex-direction: column; gap: 24px; }
+          .coreVideo { width: 100%; }
+
+          .insightsLayout { flex-direction: column; gap: 32px; }
+
+          .quotes { grid-template-columns: repeat(2, 1fr); }
+
+          .userFlowRow { flex-direction: column; gap: 20px; }
+          .flowImg { width: 100%; flex: none; }
+          .flowText { flex: none; width: 100%; }
+
+          .protoRow { flex-direction: column; gap: 20px; }
+          .protoVideo { width: 100%; }
+
+          .designContent, .designContent.reverse { flex-direction: column; gap: 20px; }
+          .twoPhones { width: 100%; justify-content: center; }
+          .designPhone { width: 45%; }
+
+          .baThreeCols { flex-direction: column; gap: 20px; }
+          .baThreeCol { flex: none; width: 100%; }
+          .baThreeColText { padding-top: 0; }
+
+          .annotatedRow { flex-direction: column; gap: 20px; }
+          .annotatedImg { width: 100%; }
+
+          .landingRow, .landingRow.reverse { flex-direction: column; gap: 20px; }
+          .landingVideo { width: 100%; }
+
+          .reflections { flex-direction: column; gap: 32px; }
+        }
       `}</style>
     </main>
   );
