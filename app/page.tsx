@@ -45,20 +45,36 @@ export default function Home() {
           {/* LEFT COLUMN */}
           <div className="bentoCol">
             <div className="cardUnit">
-              <Link href="/projects/creator-platform" className="tikTokCard">
-                <img src="/tiktokproductcard.png" alt="TikTok project" className="tikTokImg" />
+              <Link href="/projects/creator-platform" className="projectCard">
+                <img src="/tiktokproductcard.png" alt="TikTok project" className="cardImg" />
               </Link>
               <div className="cardMeta">
-                <p className="tikTokTitle">Assisting TikTok affiliates discover brands with confidence</p>
-                <span className="tikTokLabel">TIKTOK ⟡ CONCEPT 2026</span>
+                <p className="cardTitle">Assisting TikTok affiliates discover brands with confidence</p>
+                <span className="cardLabel">TIKTOK ⟡ CONCEPT 2026</span>
               </div>
             </div>
-            <div className="placeholderCard" style={{height: '505px'}} />
+            <div className="cardUnit">
+              <Link href="/projects/discord" className="projectCard">
+                <img src="/discordprojectcard.png" alt="Discord project" className="cardImg" />
+              </Link>
+              <div className="cardMeta">
+                <p className="cardTitle">Navigating Discord</p>
+                <span className="cardLabel">DISCORD ⟡ CONCEPT 2026</span>
+              </div>
+            </div>
           </div>
 
           {/* RIGHT COLUMN */}
           <div className="bentoCol">
-            <div className="placeholderCard" style={{height: '505px'}} />
+            <div className="cardUnit">
+              <Link href="/projects/booth-buzz" className="projectCard">
+                <img src="/boothbuzzprojectcard.png" alt="Booth Buzz project" className="cardImg" />
+              </Link>
+              <div className="cardMeta">
+                <p className="cardTitle">Empowering farmer's market vendors</p>
+                <span className="cardLabel">BOOTH BUZZ ⟡ CONCEPT 2026</span>
+              </div>
+            </div>
             <div className="placeholderCard" style={{height: '401px'}} />
           </div>
 
@@ -179,14 +195,14 @@ export default function Home() {
 
         /* ===== CARD UNIT ===== */
         .cardUnit { display: flex; flex-direction: column; }
-        .tikTokCard {
+        .projectCard {
           display: block;
           text-decoration: none;
           overflow: hidden;
           transition: opacity 0.2s;
         }
-        .tikTokCard:hover { opacity: 0.88; }
-        .tikTokImg {
+        .projectCard:hover { opacity: 0.88; }
+        .cardImg {
           display: block;
           width: 100%;
           object-fit: cover;
@@ -198,7 +214,7 @@ export default function Home() {
           gap: 16px;
           padding: 10px 0 0;
         }
-        .tikTokTitle {
+        .cardTitle {
           font-family: var(--font-garamond);
           font-size: 18px;
           font-weight: 400;
@@ -206,7 +222,7 @@ export default function Home() {
           line-height: 1.3;
           margin: 0;
         }
-        .tikTokLabel {
+        .cardLabel {
           font-family: var(--font-mono);
           font-size: 11px;
           letter-spacing: 1.5px;
