@@ -5,6 +5,7 @@ import { useState } from "react";
 
 export default function CreatorPlatform() {
   const [interviewOpen, setInterviewOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <main className="page">
@@ -27,8 +28,26 @@ export default function CreatorPlatform() {
         </div>
       </a>
 
-      {/* MOBILE BACK BUTTON */}
-      <Link href="/" className="mobileBack">← Back</Link>
+      {/* MOBILE NAV BAR */}
+      <div className="mobileNav">
+        <a href="/" className="mobileNavProfile">
+          <img src="/profile.JPG" alt="profile" className="mobileNavImg" />
+          <div>
+            <div className="mobileNavName">Bella Howell</div>
+            <div className="mobileNavLocation">San Diego, CA</div>
+          </div>
+        </a>
+        <button className="mobileMenuBtn" onClick={() => setMobileMenuOpen(v => !v)}>
+          MENU ☰
+        </button>
+        {mobileMenuOpen && (
+          <div className="mobileMenuDropdown">
+            <Link href="/about" onClick={() => setMobileMenuOpen(false)}>About</Link>
+            <Link href="/fun" onClick={() => setMobileMenuOpen(false)}>Fun</Link>
+            <a href="/resume" onClick={() => setMobileMenuOpen(false)}>Resume</a>
+          </div>
+        )}
+      </div>
 
       {/* NAV */}
       <nav className="nav">
@@ -661,25 +680,43 @@ export default function CreatorPlatform() {
           .flowText { flex: 0 0 180px; }
         }
 
-        /* ===== MOBILE BACK BUTTON ===== */
-        .mobileBack {
+        /* ===== MOBILE NAV ===== */
+        .mobileNav {
           display: none;
-          position: fixed; top: 20px; left: 20px; z-index: 20;
-          background: rgba(248,248,248,0.9); backdrop-filter: blur(10px);
-          border-radius: 999px; padding: 10px 20px;
-          font-family: var(--font-mono); font-size: 12px;
-          letter-spacing: 1px; text-transform: uppercase;
+          position: fixed; top: 0; left: 0; right: 0; z-index: 20;
+          background: rgba(248,248,248,0.95); backdrop-filter: blur(10px);
+          padding: 14px 20px;
+          flex-direction: row; align-items: center; justify-content: space-between;
+          box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+        .mobileNavProfile { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .mobileNavImg { width: 44px; height: 44px; border-radius: 999px; object-fit: cover; }
+        .mobileNavName { font-family: var(--font-mono); font-size: 15px; font-weight: 600; color: #111; }
+        .mobileNavLocation { font-family: var(--font-mono); font-size: 13px; color: #999; margin-top: 2px; }
+        .mobileMenuBtn {
+          background: none; border: none; cursor: pointer;
+          font-family: var(--font-mono); font-size: 13px; font-weight: 600;
+          letter-spacing: 1.5px; color: #111;
+        }
+        .mobileMenuDropdown {
+          position: absolute; top: 100%; left: 0; right: 0;
+          background: rgba(248,248,248,0.98); backdrop-filter: blur(10px);
+          display: flex; flex-direction: column;
+          padding: 12px 20px 20px; gap: 16px;
+          box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        }
+        .mobileMenuDropdown a, .mobileMenuDropdown :global(a) {
+          font-family: var(--font-mono); font-size: 13px;
+          letter-spacing: 1.5px; text-transform: uppercase;
           color: #111; text-decoration: none;
-          box-shadow: 0 4px 18px rgba(0,0,0,0.06);
         }
 
         /* ===== MOBILE (≤640px) ===== */
         @media (max-width: 640px) {
           .profileButton { display: none; }
-          .mobileBack { display: block; }
-          .nav { top: 16px; }
-          .pillNav { gap: 24px; padding: 14px 24px; }
-          .hero { padding: 100px 20px 0; margin-bottom: 40px; }
+          .nav { display: none; }
+          .mobileNav { display: flex; }
+          .hero { padding: 90px 20px 0; margin-bottom: 40px; }
           .heroInner { max-width: 100%; }
           h1 { font-size: 32px; }
           .container { padding: 0 20px 64px; }
