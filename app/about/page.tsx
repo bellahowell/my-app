@@ -27,7 +27,7 @@ export default function About() {
       {/* NAV (TOP CENTER) */}
       <nav className="nav">
         <div className="pillNav">
-          <a href="#contact">Connect</a>
+          <Link href="/">Work</Link>
           <Link href="/about">About</Link>
           <a href="/resume">Resume</a>
         </div>
@@ -222,8 +222,11 @@ export default function About() {
         .pillNav a, .pillNav :global(a) {
           text-decoration: none;
           color: #111;
-          font-size: 16px;
-          font-weight: 500;
+          font-size: 13px;
+          font-weight: 400;
+          font-family: var(--font-mono);
+          letter-spacing: 1.5px;
+          text-transform: uppercase;
           position: relative;
           transition: opacity 0.25s ease;
         }
