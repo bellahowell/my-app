@@ -76,7 +76,7 @@ export default function CreatorPlatform() {
         <section className="textSection">
           <span className="sectionLabel">OVERVIEW</span>
           <h2>Social commerce and affiliate marketing have rapidly become one of the largest and fastest-growing sectors of the creator economy.</h2>
-          <p>As affiliate marketing expands, creators face increasing challenges in evaluating which collaboration opportunities are legitimate, trustworthy, and financially worthwhile. User interviews revealed that creators often rely on trial and error to determine whether brands are reliable, with trust developing only after repeated successful interactions such as timely payments and positive communication.</p>
+          <p>Social commerce and affiliate marketing have rapidly become one of the largest and fastest-growing sectors of the creator economy, with TikTok Shop emerging as a dominant platform for creator-driven sales. In 2025, TikTok Shop generated over $20.6 billion in U.S. gross merchandise value (GMV), with affiliate creator content driving approximately 42% of all platform sales ("TikTok Shop Affiliate & Creator Statistics"). As affiliate marketing expands, creators face increasing challenges in evaluating which collaboration opportunities are legitimate, trustworthy, and financially worthwhile. User interviews revealed that creators often rely on trial and error to determine whether brands are reliable, with trust developing only after repeated successful interactions such as timely payments and positive communication.</p>
         </section>
 
         <hr className="divider" />
