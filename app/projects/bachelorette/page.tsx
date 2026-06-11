@@ -423,9 +423,11 @@ export default function BachelorettePage() {
           width: 220px;
           height: auto;
           display: block;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.10);
         }
         .yardImg {
           width: 100%; height: auto; display: block;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.10);
         }
 
         /* ===== SIX GRID ===== */
@@ -435,7 +437,7 @@ export default function BachelorettePage() {
           gap: 16px;
           margin-bottom: 32px;
         }
-        .gridImg { width: 100%; height: auto; display: block; }
+        .gridImg { width: 100%; height: auto; display: block; box-shadow: 0 4px 20px rgba(0,0,0,0.10); }
 
         /* ===== TV ROW ===== */
         .tvRow {
@@ -443,7 +445,7 @@ export default function BachelorettePage() {
           margin-bottom: 24px;
           flex-wrap: wrap;
         }
-        .tvImg { flex: 1; min-width: 0; height: auto; display: block; }
+        .tvImg { flex: 1; min-width: 0; height: auto; display: block; box-shadow: 0 4px 20px rgba(0,0,0,0.10); }
 
         /* ===== TV ANNOTATION ===== */
         .tvAnnotation {
