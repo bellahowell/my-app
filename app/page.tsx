@@ -54,12 +54,12 @@ export default function Home() {
               </div>
             </div>
             <div className="cardUnit">
-              <Link href="/projects/discord" className="projectCard">
-                <img src="/discordprojectcard.png" alt="Discord project" className="cardImg discordImg" />
+              <Link href="/projects/tintype" className="projectCard">
+                <img src="/tintypeprojectcard.png" alt="Tintype project" className="cardImg" />
               </Link>
               <div className="cardMeta">
-                <p className="cardTitle">Navigating Discord</p>
-                <span className="cardLabel">DISCORD ⟡ CONCEPT 2026</span>
+                <p className="cardTitle">Tintype chat box</p>
+                <span className="cardLabel">TINTYPE ⟡ INTERNSHIP 2026</span>
               </div>
             </div>
           </div>
@@ -75,7 +75,15 @@ export default function Home() {
                 <span className="cardLabel">BOOTH BUZZ ⟡ CONCEPT 2026</span>
               </div>
             </div>
-            <div className="placeholderCard" style={{height: '401px'}} />
+            <div className="cardUnit">
+              <Link href="/projects/bachelorette" className="projectCard">
+                <img src="/bachprojectcard.png" alt="Bachelorette planning project" className="cardImg" />
+              </Link>
+              <div className="cardMeta">
+                <p className="cardTitle">Bachelorette planning.</p>
+                <span className="cardLabel">GROUP PLANNING ⟡ CONCEPT 2026</span>
+              </div>
+            </div>
           </div>
 
         </div>
