@@ -61,7 +61,7 @@ export default function BachelorettePage() {
       <section className="hero">
         <div className="heroInner">
           <p className="heroLabel">GROUP TRAVEL ⟡ CONCEPT 2026</p>
-          <h1>Helping bridesmaids plan<br />Bachelorette trips with confidence</h1>
+          <h1>Helping bridesmaids plan Bachelorette trips with confidence</h1>
           <img src="/groupbachpic.JPG" alt="Bachelorette planning app" className="heroImg" />
         </div>
       </section>
@@ -91,29 +91,33 @@ export default function BachelorettePage() {
         {/* PROBLEM */}
         <section className="textSection">
           <span className="sectionLabel">PROBLEM</span>
-          <h2>Planning a bachelorette trip is chaotic without a shared system.</h2>
-          <p>Bridesmaids juggle group chats, spreadsheets, and multiple booking sites to coordinate a trip for a dozen people. There's no single space to align on budget, activities, and timing, leaving the maid of honor to shoulder most of the mental load while details fall through the cracks.</p>
+          <h2>Managing accommodations, activities, budgets, and communication can overwhelm the maid of honor.</h2>
+          <p>Being my best friend's maid of honor was an honor, but coordinating a destination bachelorette trip for 13 women coming from different locations revealed just how stressful and fragmented the planning process can be.</p>
         </section>
 
         {/* CHALLENGES & CONSTRAINTS */}
         <section className="textSection">
           <span className="sectionLabel">CHALLENGES & CONSTRAINTS</span>
-          <h2>Designing for groups with competing priorities.</h2>
-          <p>Every bridesmaids group has a different dynamic: varying budgets, different levels of involvement, and one person who always goes quiet in the group chat. The challenge was designing a planning system that accommodates real group behavior instead of assuming everyone participates equally. The one-week timeline pushed me to move fast from research to prototyping.</p>
+          <h2>Designing for a specific user within a tight academic timeline.</h2>
+          <p>This project was completed within a condensed academic timeline, requiring us to rapidly iterate on designs while incorporating feedback from multiple critique sessions. A key challenge was balancing feature exploration with refinement, as each design decision needed to directly address user needs rather than add unnecessary complexity.</p>
+          <p>Throughout the project, our professor emphasized designing for a specific user, the maid of honor, rather than a broad audience. This pushed us to continually evaluate whether each screen, feature, and piece of content supported her primary goal of organizing a Bachelorette trip. We also focused on reducing unnecessary white space and removing non-essential content to ensure the interface remained concise, purposeful, and easy to navigate.</p>
+        </section>
+
+        {/* DESIGN PROCESS */}
+        <section className="textSection">
+          <span className="sectionLabel">DESIGN PROCESS</span>
         </section>
 
         {/* FIRST ITERATION */}
         <section className="textSection">
-          <span className="sectionLabel">FIRST ITERATION</span>
-          <h2>Starting at the inch scale.</h2>
-          <p>My first iteration focused on individual screens in isolation, exploring how each core planning task, budget tracking, activity voting, itinerary building, could look and feel on its own before thinking about the full system.</p>
+          <h2>First iteration.</h2>
         </section>
 
         <div className="iterationBlock">
           <span className="iterTag">INCH SCALE</span>
           <div className="phoneRow">
-            <img src="/1.1.png" alt="First iteration screen 1" className="phoneImg" />
-            <img src="/1.2.png" alt="First iteration screen 2" className="phoneImg" />
+            <img src="/1.1.png" alt="First iteration inch scale 1" className="phoneImg" />
+            <img src="/1.2.png" alt="First iteration inch scale 2" className="phoneImg" />
           </div>
         </div>
 
@@ -124,16 +128,16 @@ export default function BachelorettePage() {
 
         {/* SECOND ITERATION */}
         <section className="textSection">
-          <span className="sectionLabel">SECOND ITERATION</span>
-          <h2>Zooming out to understand the full flow.</h2>
-          <p>After mapping individual screens, I stepped back to evaluate how they connected. This iteration focused on making the planning journey feel cohesive, where does someone land when they open the app, how do they move from setting a budget to selecting activities, and how do group decisions get surfaced without overwhelming anyone.</p>
+          <h2>Second iteration.</h2>
+          <p className="subhead">Inspired by our first critique session with students & the professor.</p>
+          <p>I received feedback like removing the legend from the inch scale & making it intuitive, making important content larger across both scales, and removing unnecessary features.</p>
         </section>
 
         <div className="iterationBlock">
           <span className="iterTag">INCH SCALE</span>
           <div className="phoneRow">
-            <img src="/2.1.png" alt="Second iteration screen 1" className="phoneImg" />
-            <img src="/2.2.png" alt="Second iteration screen 2" className="phoneImg" />
+            <img src="/2.1.png" alt="Second iteration inch scale 1" className="phoneImg" />
+            <img src="/2.2.png" alt="Second iteration inch scale 2" className="phoneImg" />
           </div>
         </div>
 
@@ -142,16 +146,10 @@ export default function BachelorettePage() {
           <img src="/2nditerationyard.png" alt="Second iteration yard scale overview" className="yardImg" />
         </div>
 
-        <div className="feedbackBlock">
-          <span className="sectionLabel">FEEDBACK FROM ITERATION 2</span>
-          <p>The navigation felt too linear. Real bachelorette planning isn't a step-by-step process, people jump between tasks depending on what's been decided and what's still up in the air. I needed to design for non-linear use.</p>
-        </div>
-
         {/* THIRD ITERATION */}
         <section className="textSection">
-          <span className="sectionLabel">THIRD ITERATION</span>
-          <h2>Scaling up: designing for the big screen.</h2>
-          <p>In the third iteration I explored how the planning experience could extend to a shared TV screen, something a group of bridesmaids might use together during a planning night. Designing for this context meant rethinking information density, touch targets, and which features benefit most from a communal display.</p>
+          <h2>Third iteration.</h2>
+          <p className="subhead">Inspired by more critique sessions with students & the professor.</p>
         </section>
 
         <div className="iterationBlock">
@@ -173,18 +171,19 @@ export default function BachelorettePage() {
           <img src="/tv3.3.png" alt="TV screen design 2" className="tvImg" />
         </div>
 
+        <div className="tvAnnotation">
+          <p>I researched that a dark screen with white text is more readable, so I updated the aesthetic of the smart watch app. I added a shadow to afford pressing & 4 separate screens that can branch into other ones like the location for dinner or other events. In this iteration I wanted to add more tasks a user could use the app for.</p>
+        </div>
+
         {/* FINAL */}
         <section className="textSection">
-          <span className="sectionLabel">FINAL INCH SCALE</span>
-          <h2>The finished screens.</h2>
-          <p>The final design brings together everything learned across three iterations: a flexible dashboard that accommodates different levels of participation, a budget view that keeps everyone aligned without requiring constant updates, and an activity voting system that surfaces group consensus without turning into another group chat.</p>
+          <span className="iterTag">FINAL INCH SCALE</span>
+          <div className="phoneRow" style={{marginTop: '20px'}}>
+            <img src="/finalinch1.png" alt="Final design screen 1" className="phoneImg" />
+            <img src="/finalinch2.png" alt="Final design screen 2" className="phoneImg" />
+            <img src="/finalinch3.png" alt="Final design screen 3" className="phoneImg" />
+          </div>
         </section>
-
-        <div className="finalRow">
-          <img src="/finalinch1.png" alt="Final design screen 1" className="phoneImg" />
-          <img src="/finalinch2.png" alt="Final design screen 2" className="phoneImg" />
-          <img src="/finalinch3.png" alt="Final design screen 3" className="phoneImg" />
-        </div>
 
         {/* REFLECTION */}
         <section className="textSection">
@@ -194,20 +193,20 @@ export default function BachelorettePage() {
 
         <div className="reflections">
           <div className="reflection">
-            <h3>Groups are not monoliths.</h3>
-            <p>Designing for group dynamics means accepting that participation will always be uneven. The goal isn't to force equal input, it's to make the process feel fair even when it isn't symmetrical.</p>
+            <h3>Define a specific user & specific task.</h3>
+            <p>This project taught me the importance of designing for a specific user rather than a broad audience. Instead of trying to solve every problem associated with Bachelorette planning, I focused on a single user (the maid of honor) and a specific task for each interface! Defining a clear user and goal helped guide my design decisions and ensured every feature addressed a real need.</p>
           </div>
           <div className="reflection">
-            <h3>Constraints accelerate clarity.</h3>
-            <p>A one-week timeline forced me to make decisions faster and commit earlier than I normally would. The constraints pushed me toward simplicity in ways that extended timelines rarely do.</p>
+            <h3>Intentionally use whitespace.</h3>
+            <p>This project also reinforced that whitespace should be used intentionally. Rather than leaving large empty areas or filling every space with content, whitespace should help organize information, improve readability, and guide the user's attention. Effective use of whitespace made the interface feel clearer and easier to navigate without adding unnecessary clutter.</p>
           </div>
           <div className="reflection">
-            <h3>Scale changes everything.</h3>
-            <p>Designing for a TV forced me to reconsider every assumption I'd made for mobile. The same information hierarchy that works on a phone can completely fall apart on a 55-inch shared display.</p>
+            <h3>No unnecessary features.</h3>
+            <p>Start with the essentials rather than adding features too quickly. Instead of asking what else could be included, we focused on what users absolutely needed to accomplish their primary task. An example could be, starting with a blank screen and brainstorming immediate content the user needs for that task.</p>
           </div>
           <div className="reflection">
-            <h3>Design for the real moment.</h3>
-            <p>Bachelorette planning happens in group chats at midnight and on Sundays with wine. The best design decisions came from imagining the actual context, not the ideal one.</p>
+            <h3>Important content largest.</h3>
+            <p>This project taught me the importance of visual hierarchy. Users should be able to identify the most important information at a glance, which means critical content should be larger and more visually prominent than secondary details. By prioritizing information through size, weight, and placement, we created interfaces that were easier to scan and understand.</p>
           </div>
         </div>
 
@@ -343,8 +342,8 @@ export default function BachelorettePage() {
         }
         .heroLabel {
           font-family: var(--font-mono);
-          font-size: 12px; font-weight: 400;
-          letter-spacing: 2px; text-transform: uppercase;
+          font-size: 15px; font-weight: 400;
+          letter-spacing: 0; text-transform: uppercase;
           color: rgba(50,64,79,0.58);
           margin-bottom: 20px;
         }
@@ -379,12 +378,13 @@ export default function BachelorettePage() {
         .metaItem { display: flex; flex-direction: column; gap: 6px; }
         .metaLabel {
           font-family: var(--font-mono);
-          font-size: 10px; font-weight: 600;
-          letter-spacing: 2px; text-transform: uppercase;
+          font-size: 15px; font-weight: 400;
           color: rgba(50,64,79,0.58);
         }
         .metaValue {
-          font-size: 14px; color: #32404f; line-height: 1.5;
+          font-family: var(--font-mono);
+          font-size: 15px; font-weight: 400;
+          color: rgba(50,64,79,0.58); line-height: 1.5;
         }
 
         /* ===== TEXT SECTIONS ===== */
@@ -392,26 +392,26 @@ export default function BachelorettePage() {
         .sectionLabel {
           display: block;
           font-family: var(--font-mono);
-          font-size: 10px; font-weight: 600;
-          letter-spacing: 2px; text-transform: uppercase;
+          font-size: 15px; font-weight: 400;
           color: rgba(50,64,79,0.58);
           margin-bottom: 14px;
         }
         .textSection h2 {
-          font-size: 22px; font-weight: 600;
-          color: #32404f; line-height: 1.35;
+          font-family: var(--font-garamond);
+          font-size: 32px; font-weight: 600;
+          color: #32404f; line-height: 1.2;
           margin-bottom: 16px;
         }
         .textSection p { font-size: 16px; line-height: 1.75; margin-bottom: 12px; }
         .textSection p:last-child { margin-bottom: 0; }
+        .subhead { font-size: 16px !important; color: rgba(50,64,79,0.58); font-style: normal; }
 
         /* ===== ITERATION BLOCKS ===== */
         .iterationBlock { margin-bottom: 40px; }
         .iterTag {
           display: inline-block;
           font-family: var(--font-mono);
-          font-size: 10px; font-weight: 600;
-          letter-spacing: 2px; text-transform: uppercase;
+          font-size: 16px; font-weight: 400;
           color: rgba(50,64,79,0.58);
           margin-bottom: 20px;
         }
@@ -428,18 +428,6 @@ export default function BachelorettePage() {
           width: 100%; height: auto; display: block;
         }
 
-        /* ===== FEEDBACK BLOCK ===== */
-        .feedbackBlock {
-          background: rgba(50,64,79,0.04);
-          border-left: 3px solid rgba(50,64,79,0.2);
-          padding: 24px 28px;
-          margin-bottom: 60px;
-        }
-        .feedbackBlock p {
-          font-size: 15px; line-height: 1.7;
-          color: rgba(50,64,79,0.58); margin: 0;
-        }
-
         /* ===== SIX GRID ===== */
         .sixGrid {
           display: grid;
@@ -452,16 +440,18 @@ export default function BachelorettePage() {
         /* ===== TV ROW ===== */
         .tvRow {
           display: flex; gap: 24px;
-          margin-bottom: 60px;
+          margin-bottom: 24px;
           flex-wrap: wrap;
         }
         .tvImg { flex: 1; min-width: 0; height: auto; display: block; }
 
-        /* ===== FINAL ROW ===== */
-        .finalRow {
-          display: flex; gap: 24px;
+        /* ===== TV ANNOTATION ===== */
+        .tvAnnotation {
           margin-bottom: 60px;
-          flex-wrap: wrap;
+        }
+        .tvAnnotation p {
+          font-size: 15px; line-height: 1.75;
+          color: rgba(50,64,79,0.58); margin: 0;
         }
 
         /* ===== REFLECTIONS ===== */
@@ -473,7 +463,7 @@ export default function BachelorettePage() {
         }
         .reflection h3 {
           font-family: var(--font-garamond);
-          font-size: 21px; font-weight: 500;
+          font-size: 21.2px; font-weight: 600;
           color: #32404f; line-height: 1.3;
           margin-bottom: 12px;
         }
@@ -499,11 +489,11 @@ export default function BachelorettePage() {
         @media (max-width: 640px) {
           .hero h1 { font-size: 26px; }
           .meta { grid-template-columns: 1fr 1fr; gap: 16px; }
+          .textSection h2 { font-size: 24px; }
           .phoneRow { gap: 12px; }
           .phoneImg { width: 160px; }
           .sixGrid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
           .tvRow { flex-direction: column; }
-          .finalRow { gap: 12px; }
           .reflections { gap: 28px; }
         }
       `}</style>
